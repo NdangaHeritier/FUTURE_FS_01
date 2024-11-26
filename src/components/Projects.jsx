@@ -16,7 +16,7 @@ export const Projects = () => {
             <div className="content c1 pad-3 round-2">
               <div>
                 <div className="big-text p-2">
-                  <span className="pad-1">Airbnb Project</span>
+                  <span className="pad-1">Airbnb Chrone</span>
                 </div>
                 <div className="pad-3 small-text">
                   A Place, Cabin, B&B, Home and Hotels booking and Hosting system.
@@ -39,13 +39,15 @@ export const Projects = () => {
             <div className="content c2 pad-3 round-2">
               <div>
                 <div className="big-text p-2">
-                  <span className="pad-1">Airbnb Project</span>
+                  <span className="pad-1">Church IMS</span>
                 </div>
                 <div className="pad-3 small-text">
-                  A Place, Cabin, B&B, Home and Hotels booking and Hosting system.
+                  City light Foursquare church christian management system.
                   <div className="rounds-div pt-2">
-                    <span className="rounded-btn m-1">Laravel</span>
+                    <span className="rounded-btn m-1">PHP</span>
+                    <span className="rounded-btn m-1">CSS</span>
                     <span className="rounded-btn m-1">MySQL</span>
+                    <span className="rounded-btn m-1">JS</span>
                   </div>
                 </div>
                 <div className="pad-1">
@@ -61,14 +63,14 @@ export const Projects = () => {
             <div className="content c3 pad-3 round-2">
               <div>
                 <div className="big-text p-2">
-                  <span className="pad-1">Airbnb Project</span>
+                  <span className="pad-1">E-Learning System</span>
                 </div>
                 <div className="pad-3 small-text">
-                  A Place, Cabin, B&B, Home and Hotels booking and Hosting system.
+                  A website that help students and other people to enhance their skills online.
                   <div className="rounds-div pt-2">
-                    <span className="rounded-btn m-1">Laravel</span>
-                    <span className="rounded-btn m-1">Bootstrap</span>
-                    <span className="rounded-btn m-1">MySQL</span>
+                    <span className="rounded-btn m-1">HTML</span>
+                    <span className="rounded-btn m-1">Javascript</span>
+                    <span className="rounded-btn m-1">CSS</span>
                   </div>
                 </div>
                 <div className="pad-1 ">

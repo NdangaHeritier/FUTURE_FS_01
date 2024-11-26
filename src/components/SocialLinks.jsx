@@ -28,12 +28,13 @@ export default function SocialLinks ()
         e.preventDefault();
 
         // Construct the query string
-        const queryString = new URLSearchParams(formData).toString();
+        // const queryString = new URLSearchParams(formData).toString();
 
         // Make GET request with query parameters
-        const url = `http://127.0.0.1/react-projects/portfolio-site/public/sendEmail.php?${queryString}`;
+        const url = `http://localhost:5000/send-email`;
+        const body= JSON.stringify(formData);
         
-        fetch(url)
+        fetch(url, body)
             .then((response) => {
                 if (response.ok) {
                     setSuccess(true);
@@ -50,7 +51,7 @@ export default function SocialLinks ()
     return(
         <div className="SocialLinks pad-4">
             <div className="big-text flex pad-1">
-                <span className="pi"></span>Contact Me
+                <span className="pi pad-3"></span>Contact Me
             </div>
             <div className="flex">
                 <form onSubmit={handleSubmit}>
