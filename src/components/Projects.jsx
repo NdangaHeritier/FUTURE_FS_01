@@ -10,8 +10,8 @@ export const Projects = () => {
       <div className="big-text pad-1">
         <span className="pi"></span>Projects
       </div>
-      <div className="dd-flex">
-        <div className="pad-2">
+      <div className="cards-container">
+        
           <div className="card bg-trans-1 round-2">
             <div className="content c1 pad-3 round-2">
               <div>
@@ -32,9 +32,8 @@ export const Projects = () => {
               </div>
             </div>
             <div className='img'><img src={Project1} alt="Project-1" height={300} /></div>            
-          </div>          
-        </div>
-        <div className="pad-2">
+          </div>
+        
           <div className="card bg-trans-1 round-2">
             <div className="content c2 pad-3 round-2">
               <div>
@@ -56,9 +55,8 @@ export const Projects = () => {
               </div>
             </div>
             <div className='img'><img src={Project2} alt="Project-1" height={300} /></div>
-          </div>          
-        </div>
-        <div className="pad-2">
+          </div>
+        
           <div className="card bg-trans-1 round-2">
             <div className="content c3 pad-3 round-2">
               <div>
@@ -82,6 +80,5 @@ export const Projects = () => {
           </div>          
         </div>
       </div>
-    </div>
   )
 }

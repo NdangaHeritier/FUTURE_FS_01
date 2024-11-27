@@ -6,7 +6,7 @@ export const Education = () => {
       <div className="big-text pad-1">
         <span className="pi"></span>Education
       </div>
-      <div className="content bg-trans-1 pad-3 m-2 round-2">
+      <div className="content bg-trans-1 pad-3 my-2 round-2">
         <div className="medium-text pad-2">
           <span className="pi-2"></span>Lycee Saint Alexandre Sauli De Muhura
         </div>

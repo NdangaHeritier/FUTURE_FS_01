@@ -8,7 +8,9 @@ const app = express();
 const PORT = 5000;
 
 // Use CORS to allow requests from any origin
-app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:3000',  // Adjust to your frontend URL
+}));
 
 // Middleware to parse JSON request bodies
 app.use(express.json());

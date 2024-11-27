@@ -6,7 +6,7 @@ export const Experience = () => {
       <div className="big-text pad-1">
         <span className="pi"></span>Experience
       </div>
-      <div className="content bg-trans-1 pad-3 m-2 round-2">
+      <div className="content bg-trans-1 pad-3 my-2 round-2">
         <div className="medium-text pad-2">
             <span className="big-text">1</span><span className="pi-2"></span>Intern | IDA Technology
         </div>
@@ -25,7 +25,7 @@ export const Experience = () => {
           </div>
         </div>
       </div>
-      <div className="content bg-trans-1 pad-3 m-2 round-2">
+      <div className="content bg-trans-1 pad-3 my-2 round-2">
         <div className="medium-text pad-2">
         <span className="big-text">2</span><span className="pi-2"></span>Intern | Spiderbit Ltd
         </div>
@@ -44,7 +44,7 @@ export const Experience = () => {
           </div>
         </div>
       </div>
-      <div className="content bg-trans-1 pad-3 m-2 round-2">
+      <div className="content bg-trans-1 pad-3 my-2 round-2">
         <div className="medium-text pad-2">
         <span className="big-text">3</span><span className="pi-2"></span>Freelance Developer
         </div>

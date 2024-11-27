@@ -6,7 +6,7 @@ export const Skills = () => {
       <div className="big-text pad-1">
         <span className="pi"></span>Skills
       </div>
-      <div className="content bg-trans-1 pad-3 m-2 round-2">
+      <div className="content bg-trans-1 pad-3 my-2 round-2">
         <div className="text pad-4 small-text ps-1">
           <div className="pt-3 d-dd-flex">
             <div className='pad-1 dd-flex'>

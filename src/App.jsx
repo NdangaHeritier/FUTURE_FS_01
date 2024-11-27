@@ -9,14 +9,21 @@ import { AboutMe } from './components/AboutMe'
 
 function App() {
 
+  function  activateLink(hlink){
+    Array.from(document.getElementsByClassName('HLink')).forEach(link => {
+      link.classList.remove('active');
+    });
+    hlink.classList.remove('HLink');
+
+  }
   function showNav(){
     let showLink=document.getElementsByClassName('showLink')[0]
-    if(showLink.innerHTML=='X'){
+    if(showLink.innerHTML=='✖'){
       document.getElementById('HeaderLinks').style.display="none"
       showLink.innerHTML="◧"
     }else{
       document.getElementById('HeaderLinks').style.display="block"
-      showLink.innerHTML="X"
+      showLink.innerHTML="✖"
     }
   }
   return (
@@ -27,12 +34,12 @@ function App() {
             <span>Ndanga</span>
           </div>
           <div className="Header-links" id='HeaderLinks'>
-            <div className='pad-1 a'><a href="#AboutMe">About</a></div>
-            <div className='pad-1 a'><a href="#Education">Education</a></div>
-            <div className='pad-1 a'><a href="#Experience">Experience</a></div>
-            <div className='pad-1 a'><a href="#Skills">Skills</a></div>
-            <div className='pad-1 a'><a href="#Projects">Projects</a></div>
-            <div className='pad-1 a'><a href="#Social">Contact</a></div>
+            <div className='pad-1 a'><a href="#AboutMe" onClick={()=>{activateLink(this)}} className='HLink'>About</a></div>
+            <div className='pad-1 a'><a href="#Education" onClick={()=>{activateLink(this)}} className='HLink'>Education</a></div>
+            <div className='pad-1 a'><a href="#Experience" onClick={()=>{activateLink(this)}} className='HLink'>Experience</a></div>
+            <div className='pad-1 a'><a href="#Skills" onClick={()=>{activateLink(this)}} className='HLink'>Skills</a></div>
+            <div className='pad-1 a'><a href="#Projects" onClick={()=>{activateLink(this)}} className='HLink'>Projects</a></div>
+            <div className='pad-1 a'><a href="#Social" onClick={()=>{activateLink(this)}} className='HLink'>Contact</a></div>
           </div>
           <div className="p-2">
             <button className="showLink" onClick={()=>{showNav()}}>
