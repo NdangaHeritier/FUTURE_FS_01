@@ -17,11 +17,14 @@ html {
   border-radius: 1px;
 }
 
+*{
+  font-family: "Poppins", sans-serif;
+}
+
 body{
   margin: 0;  
   background-color: rgb(23, 23, 24);
   color: #eeee;
-  font: 18px Arial, Helvetica, sans-serif;
   letter-spacing: 1.2px;
 }
 a{
