@@ -151,13 +151,16 @@ a{
   position: absolute;
   padding-top: 3rem;
   left: auto;
-  opacity: 0.4;
+  opacity: 0.2;
   filter: blur(5px);
   background-color: black;
   display: flex;
   align-items: end;
   justify-content: center;
   transition: 1s;
+}
+.card .img img{
+  width: 100%;
 }
 .card .c1{
   background: linear-gradient(180deg, rgba(8, 8, 8, 0.5), rgba(112, 42, 2, 0.819), rgb(7, 7, 7, 0.9));
@@ -238,40 +241,36 @@ textarea{
 .spans{
   width: 80%;
   display: flex;
+  align-items: center;
   
 }
 .span-w{
   width: 20%;
 }
-.span-0{
+.span-0, .span-1, .span-2, .span-3, .span-4{  
+  border-radius: 20px;
+  height: 5px;
   padding: 1px;
+}
+.span-0{
   width: 95%;
   background-color: rgb(112, 247, 108);
-  border-radius: 20px;
 }
 .span-1{
-  padding: 1px;
-  width: 90%;
+  width: 85%;
   background-color: rgb(207, 121, 8);
-  border-radius: 20px;
 }
 .span-2{
-  padding: 1px;
-  width: 85%;
+  width: 80%;
   background-color: rgb(210, 30, 255);
-  border-radius: 20px;
 }
 .span-3{
-  padding: 1px;
   width: 70%;
   background-color: rgb(30, 101, 255);
-  border-radius: 20px;
 }
 .span-4{
-  padding: 1px;
   width: 50%;
   background-color: rgb(165, 166, 167);
-  border-radius: 20px;
 }
 .color-1{
   color: rgb(207, 121, 8);

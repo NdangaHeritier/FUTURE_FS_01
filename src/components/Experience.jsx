@@ -49,7 +49,7 @@ export const Experience = () => {
         <span className="big-text">3</span><span className="pi-2"></span>Freelance Developer
         </div>
         <div className="text pad-4 small-text">
-            I Have worked on some Website development Projects. check it below:
+            I developed a comprehensive booking website tailored for a client in the wellness industry, specifically designed for sauna, guesthouse, and massage appointment bookings. This project showcases my ability to understand client needs and transform them into functional, user-friendly web solutions.
             <div className="pt-3">
                 <a href="http://bluezone.rw" target="_blank" rel="noopener noreferrer" className='btn-3 color-2'>⇱ BlueZone</a>
             </div> 
