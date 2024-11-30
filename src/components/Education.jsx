@@ -2,11 +2,11 @@ import React from 'react'
 
 export const Education = () => {
   return (
-    <div className='Education pad-4'>
-      <div className="big-text pad-1">
+    <div className='section'>
+      <div className="big-text big-title pad-1">
         <span className="pi"></span>Education
       </div>
-      <div className="content bg-trans-1 pad-3 m-2 round-2">
+      <div className="div-content bg-trans-1 pad-3 m-2 round-2">
         <div className="medium-text pad-2">
           <span className="pi-2"></span>Lycee Saint Alexandre Sauli De Muhura
         </div>

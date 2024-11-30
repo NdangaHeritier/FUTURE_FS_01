@@ -6,12 +6,12 @@ import github from '../assets/github.png'
 
 export const Projects = () => {
   return (
-    <div className='Projects pad-4'>
-      <div className="big-text pad-1">
+    <div className='section'>
+      <div className="big-text big-title pad-4">
         <span className="pi"></span>Projects
       </div>
-      <div className="dd-flex">
-        <div className="pad-2">
+      <div className="cards">
+        <div className="">
           <div className="card bg-trans-1 round-2">
             <div className="content c1 pad-3 round-2">
               <div>
@@ -26,7 +26,7 @@ export const Projects = () => {
                     <span className="rounded-btn m-1">MySQL</span>
                   </div>
                 </div>
-                <div className="">
+                <div className="link">
                   <a href="https://github.com/NdangaHeritier/Airbnb-project/tree/master" target='_blank' className=""><img src={github} width={20} className='ps-1' /></a>
                 </div>
               </div>
@@ -34,7 +34,7 @@ export const Projects = () => {
             <div className='img'><img src={Project1} alt="Project-1" width="100%" /></div>            
           </div>          
         </div>
-        <div className="pad-2">
+        <div className="">
           <div className="card bg-trans-1 round-2">
             <div className="content c2 pad-3 round-2">
               <div>
@@ -49,7 +49,7 @@ export const Projects = () => {
                     <span className="rounded-btn m-1">CSS</span>
                   </div>
                 </div>
-                <div className="">
+                <div className="link">
                   <a href="https://github.com/NdangaHeritier/FUTURE_FS_02/" target='_blank' className=""><img src={github} width={20} className='ps-1' /></a>
                 </div>
               </div>
@@ -57,7 +57,7 @@ export const Projects = () => {
             <div className='img'><img src={Project2} alt="Project-1" width="100%" /></div>
           </div>          
         </div>
-        <div className="pad-2">
+        <div className="">
           <div className="card bg-trans-1 round-2">
             <div className="content c3 pad-3 round-2">
               <div>
@@ -72,7 +72,7 @@ export const Projects = () => {
                     <span className="rounded-btn m-1">MySQL</span>
                   </div>
                 </div>
-                <div className="">
+                <div className="link">
                   <a href="#" target='_blank' className=""><img src={github} width={20} className='ps-1' /></a>
                 </div>
               </div>

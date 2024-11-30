@@ -139,42 +139,73 @@ a{
   padding: 0.70rem 1rem;
   border: 1px solid #abc;
 }
+
+.cards{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 40px 10px;
+}
 .card{
-  height: 300px;
-  width: 400px;
+  flex: 1;
   overflow: hidden;
+  position: relative;
+  height: 300px;
 }
 .card .content{
-  height: 237px;
-  width: 368px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   text-align: center;
   position: absolute;
   padding-top: 3rem;
-  left: auto;
-  opacity: 0.2;
-  filter: blur(5px);
   background-color: black;
   display: flex;
   align-items: end;
   justify-content: center;
   transition: 1s;
 }
+.card .content .big-text{  
+  opacity: 0.2;
+  filter: blur(5px);
+}
+.section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+}
+.div-content{
+  width: 80%;
+}
+.big-title{
+  width: 80%;
+}
 .card .img img{
   width: 100%;
 }
 .card .c1{
-  background: linear-gradient(180deg, rgba(8, 8, 8, 0.5), rgba(112, 42, 2, 0.819), rgb(7, 7, 7, 0.9));
+  background: linear-gradient(180deg, rgba(8, 8, 8, 0.116), rgba(112, 42, 2, 0.719), rgb(7, 7, 7, 0.9));
 }
 .card .c2{
-  background: linear-gradient(180deg, rgba(8, 8, 8, 0.5), rgb(108, 4, 134, 0.819), rgb(7, 7, 7, 0.9));
+  background: linear-gradient(180deg, rgba(8, 8, 8, 0.116), rgb(108, 4, 134, 0.519), rgb(7, 7, 7, 0.9));
 }
 .card .c3{
-  background: linear-gradient(180deg, rgba(8, 8, 8, 0.5), rgba(2, 50, 112, 0.819), rgb(7, 7, 7, 0.9));
+  background: linear-gradient(180deg, rgba(8, 8, 8, 0.116), rgba(2, 50, 112, 0.519), rgb(7, 7, 7, 0.9));
 }
-.card:hover .content{
+.card:hover .content .big-text{
   opacity: 1;  
   filter: blur(0px);
 }
+
+.card .content .link{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
 /* Contact Form */
 
 .gap-1{
@@ -451,8 +482,16 @@ textarea{
     width: 100%;
     padding-top: 5px;
   }
-  .card .content{
-    height: 240px;
-    width: 376px;
+  .cards {
+    flex-direction: column;
+  }
+  .section{
+    padding: 30px 30px;
+  }
+  .big-title{
+    width: 100%;
+  }
+  .div-content{
+    width: 100%;
   }
 }
