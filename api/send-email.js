@@ -1,5 +1,8 @@
-require('dotenv').config();
-const nodemailer = require('nodemailer');
+import dotenv from 'dotenv';
+import nodemailer from 'nodemailer';
+
+// Load environment variables
+dotenv.config();
 
 // Export a serverless function
 export default async function handler(req, res) {
