@@ -52,11 +52,11 @@ export default function SocialLinks() {
   };
 
   return (
-    <div className="SocialLinks pad-4">
+    <div className="section">
       <div className="big-text flex pad-1">
         <span className="pi pad-3"></span>Contact Me
       </div>
-      <div className="flex">
+      <div className="contact-form">
         <form onSubmit={handleSubmit}>
           <div className="flex gap-1 pad-2">
             <input

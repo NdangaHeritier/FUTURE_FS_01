@@ -43,15 +43,18 @@ a{
 }
 .Header{
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   z-index: 1;
-  padding: 1rem;
+  padding: 1rem 0px;
   position: fixed;
   left: 0;
   right: 0;
+  top: 0;
   background-color: rgb(23, 23, 24, 0.9);
 }
 .Header .Title{
-  width: 20%;
+  width: auto;
   font-weight: bold;
   font-size: larger;
   color: #abc;
@@ -59,19 +62,39 @@ a{
 .Header-links{
   padding-top: 1rem;  
   display: flex;
-  justify-content: end;
-  width: 80%;
+  justify-content: space-between;
+  width: auto;
+  gap: 10px;
 }
 .Header-links a{
   color: #dddd;
   font-size: medium;
-  padding: 16px;
   text-transform: capitalize;
   text-decoration: none;
 }
 .Header-links a:hover{
   color: rgb(210, 30, 255);
   font-size: medium;
+}
+.bars{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 5px;
+}
+
+
+.showLink{
+  background-color: transparent;
+  border-radius: 5px;
+  border: 0px;
+  cursor: pointer;
+  z-index: 999;
+  display: none;
+  color: #abc;
+  font-weight: 700;
+  font-size: medium;
+  padding: 5px 10px;
 }
 
 /* Contents Div */
@@ -98,29 +121,38 @@ a{
 .btn-1{
   background: linear-gradient(to right, rgb(210, 30, 255), rgb(207, 121, 8));
   border: 0px;
-  padding: 1rem 2rem;
+  padding: 10px 14px;
   border-radius: 10px;
   color: #eeee;
   margin: 5px;
+  font-weight: 600;
+  text-transform: lowercase;
+}
+.a{
+  font-size: 13px;
+  font-weight: 600;
 }
 .btn-3{
   background: radial-gradient( rgba(34, 34, 34, 0.733), rgba(80, 80, 80, 0.486));
   border: 0px;
-  padding: 0.75rem 1rem;
-  border-radius: 10px;
+  padding: 10px;
+  border-radius: 10px 14px;
   color: #eeee;
   margin: 5px;
-  /* transition: 1s; */
-  font-size: 15px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: lowercase;
 
 }
 .btn-2{
   background: radial-gradient( rgba(27, 27, 27, 0.808), rgba(165, 96, 5, 0.486));
   border: 0px;
-  padding: 1rem 2rem;
+  padding: 10px 14px;
   border-radius: 10px;
   color: #eeee;
   margin: 5px;
+  font-weight: 600;
+  text-transform: lowercase;
 }
 .btn-dark{
   background: radial-gradient( rgba(212, 212, 212, 0.808), rgba(212, 211, 211, 0.808));
@@ -129,6 +161,8 @@ a{
   border-radius: 10px;
   color: #eeee;
   margin: 5px;
+  font-weight: 600;
+  text-transform: lowercase;
 }
 .btn-2:hover, .btn-1:hover, .btn-3:hover{
   background: rgba(46, 46, 46, 0.432);
@@ -203,7 +237,7 @@ a{
 .card .content .link{
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: start;
 }
 
 /* Contact Form */
@@ -218,12 +252,14 @@ a{
   border: none;
   border-radius: 5px;
   color: #abc;
+  flex: 1;
+  width: 50%;
 }
 textarea{
   font: 13px "Poppins", sans-serif;
 }
 .input-field-large{
-  width: 390px;
+  width: 100%;
 }
 .input-field:focus{
   background-color: rgb(23, 23, 24);
@@ -409,21 +445,6 @@ textarea{
   color: #abc;
 }
 
-.showLink{
-  background: linear-gradient(90deg, rgba(92, 43, 2, 0.247), rgba(48, 1, 40, 0.24));
-  border-radius: 5px;
-  border: 0px;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  cursor: pointer;
-  z-index: 9999;
-  display: none;
-  color: #abc;
-  font-weight: 700;
-  font-size: medium;
-  padding: 5px 10px;
-}
 
 @media (max-width: 768px) {
   .showLink{
@@ -431,7 +452,7 @@ textarea{
   }
   .Header{
     display: flex;
-    padding: 0px 2rem;
+    width: 100%;
   }
   .Header-links{
     display: none;
@@ -456,6 +477,11 @@ textarea{
   }
   .medium-text{
     font-size: 15px;
+    display: flex;
+    align-items: center;
+  }
+  .pi-2{
+    padding: 5px;
   }
   .pad-1{
     padding: 0.25rem;
@@ -484,9 +510,16 @@ textarea{
   }
   .cards {
     flex-direction: column;
+    padding: 0px;
+  }
+  .cards .rounded-btn{
+    font-size: 10px;
+  }
+  .card{
+    width: 100%;
   }
   .section{
-    padding: 30px 30px;
+    padding: 10px 10px;
   }
   .big-title{
     width: 100%;

@@ -13,9 +13,11 @@ function App() {
     let showLink=document.getElementsByClassName('showLink')[0]
     if(showLink.innerHTML=='X'){
       document.getElementById('HeaderLinks').style.display="none"
+      showLink.style.backgroundColor="transparent"
       showLink.innerHTML="◧"
     }else{
       document.getElementById('HeaderLinks').style.display="block"
+      showLink.style.backgroundColor="rgba(12, 8, 2, 0.8)"
       showLink.innerHTML="X"
     }
   }
@@ -34,7 +36,7 @@ function App() {
             <div className='pad-1 a'><a href="#Projects">Projects</a></div>
             <div className='pad-1 a'><a href="#Social">Contact</a></div>
           </div>
-          <div className="p-2">
+          <div className="bars">
             <button className="showLink" onClick={()=>{showNav()}}>
               ◧
             </button>
