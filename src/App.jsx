@@ -14,7 +14,7 @@ function App() {
     if(showLink.innerHTML=='X'){
       document.getElementById('HeaderLinks').style.display="none"
       showLink.style.backgroundColor="transparent"
-      showLink.innerHTML="◧"
+      showLink.innerHTML=`<img src="/bars.png" alt="" />`
     }else{
       document.getElementById('HeaderLinks').style.display="block"
       showLink.style.backgroundColor="rgba(12, 8, 2, 0.8)"
