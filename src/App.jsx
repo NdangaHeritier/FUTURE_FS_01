@@ -38,7 +38,7 @@ function App() {
           </div>
           <div className="bars">
             <button className="showLink" onClick={()=>{showNav()}}>
-              ◧
+              <img src="/bars.png" alt="" />
             </button>
           </div>
         </div>
