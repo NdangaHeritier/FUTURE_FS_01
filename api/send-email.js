@@ -14,7 +14,7 @@ export default async function handler(req, res) {
 
   // Validate input data
   if (!name || !email || !phone || !message) {
-    return res.status(400).json({ error: 'All fields are required' });
+    return res.status(400).json({ error: 'All fields are required!' });
   }
 
   try {
