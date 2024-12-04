@@ -148,6 +148,33 @@ export default function SocialLinks() {
           </div>
         </form>
       </div>
+      <div className="contact-direct">
+        <a className="flex small-text pad-1" href="mailto:ndangahertier@gmail.com">
+          <img src={email} width={20} className="pe-1" alt="Email" />{' '}
+          ndangahertier@gmail.com
+        </a>
+        <a className="flex small-text pad-1" href="tel:+250786859758">
+          <img src={email} width={20} className="pe-1" alt="Call" /> Call me:
+          0786859758
+        </a>
+      </div>
+      <div className="flex pt-2">
+        <a className="btn-3 flex" href="https://linkedin.com/in/ndanga-heritier">
+          <img src={linkedin} alt="LinkedIn" />
+        </a>
+        <a className="btn-3 flex" href="https://x.com/UmuragwaH50768">
+          <img src={twitter} alt="Twitter" />
+        </a>
+        <a className="btn-3 flex" href="https://instagram.com/ndangaheritier">
+          <img src={ig} alt="Instagram" />
+        </a>
+        <a className="btn-3 flex" href="https://facebook.com/ndangaheritier">
+          <img src={facebook} alt="Facebook" />
+        </a>
+        <a className="btn-3 flex" href="https://github.com/NdangaHeritier">
+          <img src={github} width={20} alt="GitHub" />
+        </a>
+      </div>
     </div>
   );
 }
