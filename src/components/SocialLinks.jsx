@@ -5,6 +5,7 @@ import github from '../assets/github.png';
 import twitter from '../assets/twitter.png';
 import facebook from '../assets/facebook.png';
 import email from '../assets/email.png';
+import phone from '../assets/telephone.png';
 
 export default function SocialLinks() {
   const [formData, setFormData] = useState({
@@ -154,8 +155,8 @@ export default function SocialLinks() {
           ndangahertier@gmail.com
         </a>
         <a className="flex small-text pad-1" href="tel:+250786859758">
-          <img src={email} width={20} className="pe-1" alt="Call" /> Call me:
-          0786859758
+          <img src={phone} width={20} className="pe-1" alt="Call" />:
+          +250 786859758
         </a>
       </div>
       <div className="flex pt-2">

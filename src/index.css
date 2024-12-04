@@ -136,7 +136,7 @@ a{
   background: radial-gradient( rgba(34, 34, 34, 0.733), rgba(80, 80, 80, 0.486));
   border: 0px;
   padding: 10px;
-  border-radius: 10px 14px;
+  border-radius: 20px;
   color: #eeee;
   margin: 5px;
   font-size: 13px;
@@ -169,9 +169,7 @@ a{
   cursor: pointer;
 }
 .btn-3:hover{
-  opacity: 0.6;
-  padding: 0.70rem 1rem;
-  border: 1px solid #abc;
+  background-color: rgb(207, 121, 8, 0.5);
 }
 
 .cards{
@@ -288,10 +286,10 @@ textarea{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  gap: 10px;
 }
 .contact-direct img{
-  filter: brightness(30%);
+  filter: brightness(40%);
 }
 .contact-direct .flex{
   color: rgb(121, 120, 120);
@@ -526,5 +524,8 @@ textarea{
   }
   .div-content{
     width: 100%;
+  }
+  .contact-direct{
+    flex-direction: column;
   }
 }
