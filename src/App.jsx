@@ -4,7 +4,7 @@ import { Education } from './components/Education'
 import { Projects } from './components/Projects'
 import { Skills } from './components/Skills'
 import { Experience } from './components/Experience'
-import logo from './assets/LOGO.png'
+import logo from './assets/LOGO-Color.png'
 import { AboutMe } from './components/AboutMe'
 
 function App() {
@@ -23,10 +23,10 @@ function App() {
   }
   return (
     <div className='Main'>
-        <div className="Header">
+        <div className="Header backdrop-blur-sm sticky top-0 left-0 right-0 z-10">
           <div className="Title flex">
-            <img src={logo} alt="Logo" height={50} />
-            <span>Ndanga</span>
+            <img src={logo} alt="Logo" height={50} className='h-14' />
+            <span className='ps-1'>danga.</span>
           </div>
           <div className="Header-links" id='HeaderLinks'>
             <div className='pad-1 a'><a href="#AboutMe">About</a></div>
@@ -42,7 +42,7 @@ function App() {
             </button>
           </div>
         </div>
-        <div className="Contents">
+        <div className="Contents px-8 py-10">
           <div className='flex' id='About'>
             <Profile/>          
           </div>
