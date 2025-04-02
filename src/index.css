@@ -145,7 +145,6 @@ body{
   border-radius: 10px;
   color: #eeee;
   margin: 5px;
-  font-weight: 600;
 }
 .btn-dark{
   background: radial-gradient( rgba(212, 212, 212, 0.808), rgba(212, 211, 211, 0.808));
@@ -196,16 +195,7 @@ body{
   filter: blur(5px);
 }
 .section{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 20px 10px;
-}
-.div-content{
-  width: 90%;
-}
-.big-title{
-  width: 90%;
 }
 .card .img img{
   width: 100%;
@@ -295,40 +285,6 @@ textarea{
 
 /* Additional styles */
 
-.spans{
-  width: 80%;
-  display: flex;
-  align-items: center;
-  
-}
-.span-w{
-  width: 20%;
-}
-.span-0, .span-1, .span-2, .span-3, .span-4{  
-  border-radius: 20px;
-  height: 5px;
-  padding: 1px;
-}
-.span-0{
-  width: 95%;
-  background-color: rgb(112, 247, 108);
-}
-.span-1{
-  width: 85%;
-  background-color: rgb(207, 121, 8);
-}
-.span-2{
-  width: 80%;
-  background-color: rgb(210, 30, 255);
-}
-.span-3{
-  width: 70%;
-  background-color: rgb(30, 101, 255);
-}
-.span-4{
-  width: 50%;
-  background-color: rgb(165, 166, 167);
-}
 .color-1{
   color: rgb(207, 121, 8);
 }
@@ -341,7 +297,7 @@ textarea{
   color: #ffff;
 }
 .medium-text{
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 700;
   color: #e9e6e6;
 }
@@ -352,18 +308,6 @@ textarea{
 .small-text{
   font-size: 15px;
   color: #dddd;
-}
-.rounds-div{
-  display: flex;
-  justify-content: start;
-}
-.rounded-btn{
-  background-color: rgba(208, 10, 247, 0.226);
-  border-radius: 30px;
-  padding: 5px 10px;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 12px;
 }
 .pi{
   padding: 2px;
@@ -475,7 +419,7 @@ textarea{
     width: 100%;
   }
   .medium-text{
-    font-size: 15px;
+    font-size: 18px;
     display: flex;
     align-items: center;
   }
@@ -518,7 +462,7 @@ textarea{
     width: 100%;
   }
   .section{
-    padding: 10px 10px;
+    padding: 10px 0px;
   }
   .big-title{
     width: 100%;

@@ -2,19 +2,19 @@ import React from 'react'
 
 export const Experience = () => {
   return (
-    <div className='section'>
+    <div className='px-8 max-sm:px-5'>
       <div className="big-text big-title pad-1">
         <span className="pi"></span>Experience
       </div>
 
       {/* experience cards */}
 
-      <div className="div-content bg-trans-1 pad-3 m-2 round-2">
+      <div className="div-content bg-trans-1 pad-3 my-2 round-2">
         <div className="medium-text p-2">
             <span className="big-text">1</span><span className="pi-2"></span>Junior Web Developer
         </div>
         <div className="company px-3 inline-flex items-center gap-2 w-full">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className='text-slate-500 h-7 w-7'>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className='text-slate-500 h-7 w-7 max-sm:h-5 max-sm:w-5'>
          
           <path d="M2 4h10a2 2 0 0 1 2 2v20a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" />
           
@@ -24,9 +24,9 @@ export const Experience = () => {
           <path d="M15 12h4v4h-4zm0 6h4v4h-4zm0 6h4v4h-4" />
         </svg>
 
-          <span className="text-lg">Infinity Tech Solutions.</span>
+          <span className="text-lg max-sm:text-base text-slate-300">Infinity Tech Solutions.</span>
         </div>
-        <div className="p-4 pt-2 pb-0 text-gray-500 inline-flex items-center lg:gap-x-10 gap-x-3 text-sm">
+        <div className="p-4 pt-2 pb-0 text-gray-500 inline-flex items-center max-sm:flex-col max-sm:items-start lg:gap-x-10 gap-x-3 gap-y-2 gap-x-3 text-sm">
           <span className='flex items-center'>
             Feb 2025 - <span className="h-3 w-3 rounded-full bg-green-500 border-2 border-green-700 mx-1"></span>
             <code className='text-white'>Present</code>
@@ -59,7 +59,7 @@ export const Experience = () => {
            <div className="inlineflex pt-2">
            <a href="http://infinitytech.rw" target="_blank" rel="noopener noreferrer"><span className='underline text-slate-400'>Visit Their Website </span></a>
            </div>
-           <div className="pt-3 rounds-div">
+           <div className="pt-3 inline-flex items-center flex-wrap">
             <div className='pad-1'><span className="bg-green-950 border border-green-800 text-green-400 rounded-lg px-2 py-1 text-xs">Full-stack Development</span></div>            
             <div className='pad-1'><span className="bg-blue-950 border border-blue-800 text-blue-400 rounded-lg px-2 py-1 text-xs">MERN Stack</span></div>
             <div className='pad-1'><span className="bg-violet-950 border border-violet-800 text-violet-400 rounded-lg px-2 py-1 text-xs">ReactJS</span></div>
@@ -68,12 +68,12 @@ export const Experience = () => {
         </div>
       </div>
 
-      <div className="div-content bg-trans-1 pad-3 m-2 round-2">
+      <div className="div-content bg-trans-1 pad-3 my-2 round-2">
         <div className="medium-text p-2">
             <span className="big-text">2</span><span className="pi-2"></span>Full-stack Web Developer Intern
         </div>
         <div className="company px-3 inline-flex items-center gap-2 w-full">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className='text-slate-500 h-7 w-7'>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className='text-slate-500 h-7 w-7 max-sm:h-5 max-sm:w-5'>
          
           <path d="M2 4h10a2 2 0 0 1 2 2v20a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" />
           
@@ -83,9 +83,9 @@ export const Experience = () => {
           <path d="M15 12h4v4h-4zm0 6h4v4h-4zm0 6h4v4h-4" />
         </svg>
 
-          <span className="text-lg">FutureInterns</span>
+          <span className="text-lg max-sm:text-base text-slate-300">FutureInterns</span>
         </div>
-        <div className="p-4 pt-2 pb-0 text-gray-500 inline-flex items-center lg:gap-x-10 gap-x-3 text-sm">
+        <div className="p-4 pt-2 pb-0 text-gray-500 inline-flex items-center max-sm:flex-col max-sm:items-start lg:gap-x-10 gap-x-3 gap-y-2 gap-x-3 text-sm">
           <span>Nov 2024 - Dec 2024</span>
           <span className='text-slate-400 inline-flex items-center'>
             <svg
@@ -115,7 +115,7 @@ export const Experience = () => {
            <div className="inlineflex pt-2">
            <a href="http://futureinterns.com" target="_blank" rel="noopener noreferrer"><span className='underline text-slate-400'>Visit Their Website </span></a>
            </div>
-           <div className="pt-3 rounds-div">
+           <div className="pt-3 inline-flex items-center flex-wrap">
             <div className='pad-1'><span className="bg-green-950 border border-green-800 text-green-400 rounded-lg px-2 py-1 text-xs">Certified Developer</span></div>            
             <div className='pad-1'><span className="bg-blue-950 border border-blue-800 text-blue-400 rounded-lg px-2 py-1 text-xs">LoR</span></div>
             <div className='pad-1'><span className="bg-violet-950 border border-violet-800 text-violet-400 rounded-lg px-2 py-1 text-xs">React</span></div>
@@ -126,12 +126,12 @@ export const Experience = () => {
       </div>
 
       {/* after first two cards */}
-      <div className="div-content bg-trans-1 pad-3 m-2 round-2">
+      <div className="div-content bg-trans-1 pad-3 my-2 round-2">
         <div className="medium-text p-2">
             <span className="big-text">3</span><span className="pi-2"></span>Software Developer Intern
         </div>
         <div className="company px-3 inline-flex items-center gap-2 w-full">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className='text-slate-500 h-7 w-7'>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className='text-slate-500 h-7 w-7 max-sm:h-5 max-sm:w-5'>
          
           <path d="M2 4h10a2 2 0 0 1 2 2v20a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" />
           
@@ -141,9 +141,9 @@ export const Experience = () => {
           <path d="M15 12h4v4h-4zm0 6h4v4h-4zm0 6h4v4h-4" />
         </svg>
 
-          <span className="text-lg">IDA Technology</span>
+          <span className="text-lg max-sm:text-base text-slate-300">IDA Technology</span>
         </div>
-        <div className="p-4 pt-2 pb-0 text-gray-500 inline-flex items-center lg:gap-x-10 gap-x-3 text-sm">
+        <div className="p-4 pt-2 pb-0 text-gray-500 inline-flex items-center max-sm:flex-col max-sm:items-start lg:gap-x-10 gap-x-3 gap-y-2 gap-x-3 text-sm">
           <span>Mar 2023 - Apr 2023</span>
           <span className='text-slate-400 inline-flex items-center'>
             <svg
@@ -171,19 +171,19 @@ export const Experience = () => {
            <div className="inlineflex pt-2">
            <a href="http://idatech.rw" target="_blank" rel="noopener noreferrer"><span className='underline text-slate-400'>Visit Their Website </span></a>
            </div>
-           <div className="pt-3 rounds-div">
+           <div className="pt-3 inline-flex items-center flex-wrap">
             <div className='pad-1'><span className="bg-green-950 border border-green-800 text-green-400 rounded-lg px-2 py-1 text-xs">Team Working</span></div>            
             <div className='pad-1'><span className="bg-blue-950 border border-blue-800 text-blue-400 rounded-lg px-2 py-1 text-xs">Problem Solving</span></div>
             <div className='pad-1'><span className="bg-violet-950 border border-violet-800 text-violet-400 rounded-lg px-2 py-1 text-xs">PHP</span></div>
           </div>
         </div>
       </div>
-      <div className="div-content bg-trans-1 pad-3 m-2 round-2">
+      <div className="div-content bg-trans-1 pad-3 my-2 round-2">
       <div className="medium-text p-2">
             <span className="big-text">4</span><span className="pi-2"></span>Web Developer Intern
         </div>
         <div className="company px-3 inline-flex items-center gap-2 w-full">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className='text-slate-500 h-7 w-7'>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className='text-slate-500 h-7 w-7 max-sm:h-5 max-sm:w-5'>
          
           <path d="M2 4h10a2 2 0 0 1 2 2v20a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" />
           
@@ -193,9 +193,9 @@ export const Experience = () => {
           <path d="M15 12h4v4h-4zm0 6h4v4h-4zm0 6h4v4h-4" />
         </svg>
 
-          <span className="text-lg">Spiderbit Ltd</span>
+          <span className="text-lg max-sm:text-base text-slate-300">Spiderbit Ltd</span>
         </div>
-        <div className="p-4 pt-2 pb-0 text-gray-500 inline-flex items-center lg:gap-x-10 gap-x-3 text-sm">
+        <div className="p-4 pt-2 pb-0 text-gray-500 inline-flex items-center max-sm:flex-col max-sm:items-start lg:gap-x-10 gap-x-3 gap-y-2 gap-x-3 text-sm">
           <span>March 2024 - April 2024</span>
           <span className='text-slate-400 inline-flex items-center'>
             <svg
@@ -223,7 +223,7 @@ export const Experience = () => {
           <div className="inlineflex pt-2">
             <a href="http://spiderbit.rw" target="_blank" rel="noopener noreferrer"><span className='underline text-slate-400'>Visit Their Website </span></a>
           </div>
-          <div className="pt-3 rounds-div">
+          <div className="pt-3 inline-flex items-center flex-wrap">
             <div className='pad-1'><span className="bg-green-950 border border-green-800 text-green-400 rounded-lg px-2 py-1 text-xs">TailwindCSS</span></div>
             <div className='pad-1'><span className="bg-blue-950 border border-blue-800 text-blue-400 rounded-lg px-2 py-1 text-xs">JavaScript</span></div>
             <div className='pad-1'><span className="bg-violet-950 border border-violet-800 text-violet-400 rounded-lg px-2 py-1 text-xs">PHP</span></div>
@@ -232,12 +232,12 @@ export const Experience = () => {
           </div>
         </div>
       </div>
-      <div className="div-content bg-trans-1 pad-3 m-2 round-2">
+      <div className="div-content bg-trans-1 pad-3 my-2 round-2">
         <div className="medium-text pad-2">
         <span className="big-text">5</span><span className="pi-2"></span>Freelance Developer
         </div>
         <div className="company px-3 inline-flex items-center gap-2 w-full">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className='text-slate-500 h-7 w-7'>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className='text-slate-500 h-7 w-7 max-sm:h-5 max-sm:w-5'>
          
           <path d="M2 4h10a2 2 0 0 1 2 2v20a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" />
           
@@ -247,9 +247,9 @@ export const Experience = () => {
           <path d="M15 12h4v4h-4zm0 6h4v4h-4zm0 6h4v4h-4" />
         </svg>
 
-          <span className="text-lg">Freelancing</span>
+          <span className="text-lg max-sm:text-base text-slate-300">Freelancing</span>
         </div>
-        <div className="p-4 pt-2 pb-0 text-gray-500 inline-flex items-center lg:gap-x-10 gap-x-3 text-sm">
+        <div className="p-4 pt-2 pb-0 text-gray-500 inline-flex items-center max-sm:flex-col max-sm:items-start lg:gap-x-10 gap-x-3 gap-y-2 gap-x-3 text-sm">
           <span className='flex'>
             Oct 2022 - <span className="h-3 w-3 rounded-full bg-green-500 border-2 border-green-700 mx-1"></span>
             <code className='text-white'>Present</code>
