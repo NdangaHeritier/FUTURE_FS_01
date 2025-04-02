@@ -42,7 +42,7 @@ function App() {
             </button>
           </div>
         </div>
-        <div className="Contents py-10">
+        <div className="Contents pt-10">
           <div className='flex items-center justify-center' id='About'>
             <Profile/>          
           </div>

@@ -53,7 +53,7 @@ export default function SocialLinks() {
   };
 
   return (
-    <div className="section">
+    <div className="px-8 bg-trans-2 py-10 max-sm:px-5 flex flex-col items-center justify-center">
       <div className="big-text flex pad-1">
         <span className="pi pad-3"></span>Contact Me
       </div>
@@ -159,7 +159,7 @@ export default function SocialLinks() {
           +250 786859758
         </a>
       </div>
-      <div className="flex pt-2">
+      <div className="flex items-center justify-center pt-2">
         <a className="btn-3 flex" href="https://linkedin.com/in/ndanga-heritier">
           <img src={linkedin} alt="LinkedIn" />
         </a>
