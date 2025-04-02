@@ -132,7 +132,7 @@ export const Projects = () => {
               <h3 className="text-xl font-semibold pt-10 text-center">Let's talk about your project</h3>
               <p className="text-gray-300 text-center p-5">I am always open to discussing your project and helping you with your design needs.</p>
               <div className="content p-4">
-                <a href="#social" className="bg-slate-100 rounded-xl px-5 py-3 text-yellow-700 font-semibold flex">
+                <a href="#Social" className="bg-slate-100 rounded-xl px-5 py-3 text-yellow-700 font-semibold flex">
                   Let's Talk
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5 inline-block ml-2">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
