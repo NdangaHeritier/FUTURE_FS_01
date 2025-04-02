@@ -5,7 +5,7 @@ import emailIcon from '../assets/email.png'
 
 export const Profile = () => {
   return (
-    <div className="Profile-content p-4 max-sm:px-0">
+    <div className="Profile-content p-4 px-8 max-sm:px-5">
         <div className="Pic">
             <img src={Mypic} alt="Profile Picture of Umuragwa Ndanga Heritier" />
         </div>
@@ -19,7 +19,7 @@ export const Profile = () => {
             <p className="text-base font-light text-gray-400 max-sm:text-start p-2">
                 I am a Codding Geek with over 3 years of experience in crafting dynamic, scalable, and user-friendly web applications. My expertise lies in delivering innovative solutions that bridge creativity and functionality.
             </p>
-            <div className="link p-2 iniline-flex items-center gap-x-4 gap-y-2 flex-wrap">
+            <div className="link p-2 inline-flex items-center justify-center gap-x-4 gap-y-2 flex-wrap">
                 <a href="#Social" className="rounded-xl max-sm:text-sm max-sm:px-4 max-sm:py-3 px-5 py-3 bg-yellow-700 hover:bg-yellow-800 text-white flex items-center">
                   Get In Touch
                   <svg xmlns="http://www.w3.org/2000/svg" className="ms-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
