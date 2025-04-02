@@ -48,8 +48,8 @@ function App() {
           </div>
           <div id='AboutMe'><AboutMe/></div>
           <div id='Education'><Education/></div>
-          <div id='Skills'><Skills/></div>
           <div id='Experience'><Experience/></div>
+          <div id='Skills'><Skills/></div>
           <div id='Projects'><Projects/></div>
           <div id='Social'><SocialLinks/></div>
         </div>
