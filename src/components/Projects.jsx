@@ -107,7 +107,7 @@ export const Projects = () => {
                     }
                   )}
                 </p>
-                <div className="absolute top-0 right-0 left-0 h-56 rounded-t-lg flex flex-col items-end p-3 justify-between bg-gradient-to-r from-transparent to-slate-800">
+                <div className="absolute top-0 right-0 left-0 h-56 rounded-t-lg flex flex-col items-end p-3 justify-between bg-gradient-to-r from-transparent to-slate-900 from-80%">
                   <p className="shadow-lg bg-slate-200 text-slate-950 font-bold rounded-lg px-2 py-1 border-2 border-slate-400 text-[15px]">{item.year}</p>
                   {item.url && (
                   <a href={item.url} target="_blank" rel="noopener noreferrer" className="mt-2 text-slate-100 inline-flex items-center hover:bg-slate-950 border border-slate-500 bg-slate-900 rounded-lg px-2 py-1 text-sm font-semibold">
