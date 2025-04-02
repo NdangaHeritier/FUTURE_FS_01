@@ -216,7 +216,7 @@ textarea{
 }
 .contact-direct img{
   filter: brightness(40%);
-/* }
+}
 .contact-direct .flex{
   color: rgb(121, 120, 120);
   padding: 5px 16px;
@@ -224,7 +224,7 @@ textarea{
   border: 1px dotted rgb(61, 61, 61);
   font-size: 12px;
   background-color: rgba(27, 27, 27, 0.808);
-} */
+}
 /* End of Contact Form */
 
 /* Additional styles */
