@@ -129,7 +129,7 @@ export const Projects = () => {
                 </svg>
               </div>
               
-              <h3 className="text-xl font-semibold pt-10">Let's talk about your project</h3>
+              <h3 className="text-xl font-semibold pt-10 text-center">Let's talk about your project</h3>
               <p className="text-gray-300 text-center p-5">I am always open to discussing your project and helping you with your design needs.</p>
               <div className="content p-4">
                 <a href="#social" className="bg-slate-100 rounded-xl px-5 py-3 text-yellow-700 font-semibold flex">
