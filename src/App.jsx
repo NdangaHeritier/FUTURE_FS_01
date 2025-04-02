@@ -43,7 +43,7 @@ function App() {
           </div>
         </div>
         <div className="Contents py-10">
-          <div className='flex' id='About'>
+          <div className='flex items-center justify-center' id='About'>
             <Profile/>          
           </div>
           <div id='AboutMe'><AboutMe/></div>
