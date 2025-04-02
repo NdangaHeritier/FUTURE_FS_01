@@ -109,7 +109,7 @@ export const Experience = () => {
         <div className="text pad-4 small-text">
           A one month program that provide handon codding challenges and references to help young tech gain handon experience and to help also youth developing outstanding social profiles.
           they offer an opportunity to give the ones who has completed 3 given project on time the Verified Certification and Letter Of Recommendation that help him to apply for different jobs.
-          <p className='pt-2 text-slate-400 italic'>
+          <p className='pt-2 text-yellow-100 text-sm'>
             <q>For me it was like winning a lottery because I was able to get the LoR and the Certificate that help me to apply for different jobs aswell as the projects to boost my linkedin profile and followers.</q>
           </p>
            <div className="inlineflex pt-2">
