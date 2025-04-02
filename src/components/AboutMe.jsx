@@ -35,7 +35,7 @@ export const AboutMe = () => {
             <p>
               I am passionate about creating intuitive, user-focused designs that are both functional and visually appealing. When I'm not coding, I enjoy sketching, turning ideas into visual art that complements my technical skills.
             </p>
-            <div className="pt-3 inline-flex flex-wrap justify-start gap-2">
+            <div className="pt-3 flex flex-wrap items-center justify-center gap-2">
               <a 
                 download="CV_Heritier.pdf" 
                 href="/CV_Heritier.pdf" 
