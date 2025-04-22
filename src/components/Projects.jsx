@@ -8,7 +8,6 @@ import Project6 from '../assets/project6.png'
 import Project7 from '../assets/project7.png'
 import Project8 from '../assets/project8.png'
 import Project9 from '../assets/project9.png'
-import github from '../assets/github.png'
 import SkillCard from './SkillCard'
 
 const projectItems = [
@@ -35,7 +34,7 @@ const projectItems = [
     image: Project2,
     technologies: ["AOS Animation", "TailwindCSS", "JavaScript"],
     client: "Oshil. ltd",
-    url: "https://oshil.vercel.app/",
+    url: "https://oshilevents.vercel.app/",
     year: "2025",
   },
   {

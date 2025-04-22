@@ -12,11 +12,13 @@ function App() {
   function showNav(){
     let showLink=document.getElementsByClassName('showLink')[0]
     if(showLink.innerHTML=='X'){
-      document.getElementById('HeaderLinks').style.display="none"
+      document.querySelector('#HeaderLinks').classList.add('max-sm:hidden')
+      document.querySelector('#HeaderLinks').classList.remove('max-sm:block')
       showLink.style.backgroundColor="transparent"
       showLink.innerHTML=`<img src="/bars.png" alt="" />`
     }else{
-      document.getElementById('HeaderLinks').style.display="block"
+      document.querySelector('#HeaderLinks').classList.add('max-sm:block')
+      document.querySelector('#HeaderLinks').classList.remove('max-sm:hidden')
       showLink.style.backgroundColor="rgba(12, 8, 2, 0.8)"
       showLink.innerHTML="X"
     }
@@ -25,16 +27,16 @@ function App() {
     <div className='Main'>
         <div className="Header backdrop-blur-sm sticky top-0 left-0 right-0 z-10">
           <div className="Title flex">
-            <img src={logo} alt="Logo" height={50} className='h-14' />
-            <span className='ps-1'>danga.</span>
+            <img src={logo} alt="Logo" height={50} className='h-14 max-sm:h-10' />
+            <span className='ps-0'>danga.</span>
           </div>
-          <div className="Header-links" id='HeaderLinks'>
-            <div className='pad-1 a'><a href="#AboutMe">About</a></div>
-            <div className='pad-1 a'><a href="#Education">Education</a></div>
-            <div className='pad-1 a'><a href="#Experience">Experience</a></div>
-            <div className='pad-1 a'><a href="#Skills">Skills</a></div>
-            <div className='pad-1 a'><a href="#Projects">Projects</a></div>
-            <div className='pad-1 a'><a href="#Social">Contact</a></div>
+          <div className="Header-links min-sm:flex max-sm:hidden" id='HeaderLinks'>
+            <div className='p-2 max-sm:my-8 a'><a href="#AboutMe" onClick={()=>{showNav()}}>About</a></div>
+            <div className='p-2 a'><a href="#Education" onClick={()=>{showNav()}}>Education</a></div>
+            <div className='p-2 a'><a href="#Experience" onClick={()=>{showNav()}}>Experience</a></div>
+            <div className='p-2 a'><a href="#Skills" onClick={()=>{showNav()}}>Skills</a></div>
+            <div className='p-2 a'><a href="#Projects" onClick={()=>{showNav()}}>Projects</a></div>
+            <div className='p-2 a'><a href="#Social" onClick={()=>{showNav()}}>Contact</a></div>
           </div>
           <div className="bars">
             <button className="showLink" onClick={()=>{showNav()}}>

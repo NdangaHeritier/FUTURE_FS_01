@@ -35,11 +35,11 @@ export const AboutMe = () => {
             <p>
               I am passionate about creating intuitive, user-focused designs that are both functional and visually appealing. When I'm not coding, I enjoy sketching, turning ideas into visual art that complements my technical skills.
             </p>
-            <div className="pt-3 flex flex-wrap items-center justify-center gap-2">
+            <div className="pt-3 md:flex items-center justify-start gap-2 max-sm:grid max-sm:grid-cols-1">
               <a 
                 download="CV_Heritier.pdf" 
                 href="/CV_Heritier.pdf" 
-                className="btn-2 max-sm:text-sm flex items-center ring-2 ring-yellow-900" 
+                className="btn-2 max-sm:text-sm flex items-center ring-2 ring-yellow-900 justify-between" 
                 aria-label="Download my resume in PDF format"
               >
                 <svg 
@@ -54,8 +54,8 @@ export const AboutMe = () => {
                 Download Resume
               </a>
 
-              <a href="#Social" className="rounded-xl px-5 py-4 bg-yellow-700 hover:bg-yellow-800 text-white flex items-center max-sm:w-full">
-                  Hit Me Up
+              <a href="#Social" className="rounded-xl px-5 py-4 bg-yellow-700 hover:bg-yellow-800 text-white flex items-center justify-between">
+                  Let's Talk
                   <svg xmlns="http://www.w3.org/2000/svg" className="ms-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>

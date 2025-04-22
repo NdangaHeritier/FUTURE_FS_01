@@ -1,4 +1,5 @@
 import React from 'react'
+import SkillCard from './SkillCard'
 
 export const Education = () => {
   return (
@@ -39,11 +40,15 @@ export const Education = () => {
           the school Open Day, which received excellent reviews and delivered impressive results.
           
         </div>  
-        <div className="inline-flex items-center flex-wrap">
-            <div className='pad-1'><span className="bg-green-950 border border-green-800 text-green-400 rounded-lg px-2 py-1 text-xs">HTML</span></div>            
-            <div className='pad-1'><span className="bg-blue-950 border border-blue-800 text-blue-400 rounded-lg px-2 py-1 text-xs">CSS</span></div>
-            <div className='pad-1'><span className="bg-violet-950 border border-violet-800 text-violet-400 rounded-lg px-2 py-1 text-xs">PHP</span></div>
-            <div className='pad-1'><span className="bg-yellow-950 border border-yellow-800 text-yellow-400 rounded-lg px-2 py-1 text-xs">Diploma</span></div>
+        <div className="inline-flex pt-2 items-center flex-wrap">
+            <SkillCard name="HTML & CSS & JS" />           
+            <SkillCard name="Programming Basics" />
+            <SkillCard name="PHP" />
+            <SkillCard name="Python" />
+            <SkillCard name="C++" />
+            <SkillCard name="C" />
+            <SkillCard name="JavaScript" />
+            <SkillCard name="Diploma" />
           </div>      
       </div>
     </div>

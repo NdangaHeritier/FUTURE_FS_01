@@ -1,4 +1,5 @@
 import React from 'react'
+import SkillCard from './SkillCard'
 
 export const Experience = () => {
   return (
@@ -60,10 +61,10 @@ export const Experience = () => {
             <a href="http://infinitytech.rw" target="_blank" rel="noopener noreferrer"><span className='underline text-slate-400'>Visit Their Website </span></a>
             </div>
             <div className="pt-3 inline-flex items-center flex-wrap">
-              <div className='pad-1'><span className="bg-green-950 border border-green-800 text-green-400 rounded-lg px-2 py-1 text-xs">Full-stack Development</span></div>            
-              <div className='pad-1'><span className="bg-sky-950 border border-sky-800 text-sky-400 rounded-lg px-2 py-1 text-xs">MERN Stack</span></div>
-              <div className='pad-1'><span className="bg-violet-950 border border-violet-800 text-violet-400 rounded-lg px-2 py-1 text-xs">ReactJS</span></div>
-              <div className='pad-1'><span className="bg-yellow-950 border border-yellow-800 text-yellow-400 rounded-lg px-2 py-1 text-xs">PocketBase</span></div>
+              <SkillCard name="Full-stack Development" />            
+              <SkillCard name="MERN Stack" />
+              <SkillCard name="ReactJS" />
+              <SkillCard name="PocketBase" />
             </div>
           </div>
         </div>
@@ -116,11 +117,11 @@ export const Experience = () => {
             <a href="http://futureinterns.com" target="_blank" rel="noopener noreferrer"><span className='underline text-slate-400'>Visit Their Website </span></a>
             </div>
             <div className="pt-3 inline-flex items-center flex-wrap">
-              <div className='pad-1'><span className="bg-green-950 border border-green-800 text-green-400 rounded-lg px-2 py-1 text-xs">Certified Developer</span></div>            
-              <div className='pad-1'><span className="bg-sky-950 border border-sky-800 text-sky-400 rounded-lg px-2 py-1 text-xs">LoR</span></div>
-              <div className='pad-1'><span className="bg-violet-950 border border-violet-800 text-violet-400 rounded-lg px-2 py-1 text-xs">React</span></div>
-              <div className='pad-1'><span className="bg-indigo-950 border border-indigo-800 text-indigo-400 rounded-lg px-2 py-1 text-xs">E-commerce App</span></div>
-              <div className='pad-1'><span className="bg-yellow-950 border border-yellow-800 text-yellow-400 rounded-lg px-2 py-1 text-xs">Todo App</span></div>
+              <SkillCard name="Certified Developer" />            
+              <SkillCard name="LoR" />
+              <SkillCard name="React" />
+              <SkillCard name="E-commerce App" />
+              <SkillCard name="Todo App" />
             </div>
           </div>
         </div>
@@ -172,9 +173,9 @@ export const Experience = () => {
             <a href="http://idatech.rw" target="_blank" rel="noopener noreferrer"><span className='underline text-slate-400'>Visit Their Website </span></a>
             </div>
             <div className="pt-3 inline-flex items-center flex-wrap">
-              <div className='pad-1'><span className="bg-green-950 border border-green-800 text-green-400 rounded-lg px-2 py-1 text-xs">Team Working</span></div>            
-              <div className='pad-1'><span className="bg-sky-950 border border-sky-800 text-sky-400 rounded-lg px-2 py-1 text-xs">Problem Solving</span></div>
-              <div className='pad-1'><span className="bg-violet-950 border border-violet-800 text-violet-400 rounded-lg px-2 py-1 text-xs">PHP</span></div>
+              <SkillCard name="Team Working" />            
+              <SkillCard name="Problem Solving" />
+              <SkillCard name="PHP" />
             </div>
           </div>
         </div>
@@ -224,11 +225,11 @@ export const Experience = () => {
               <a href="http://spiderbit.rw" target="_blank" rel="noopener noreferrer"><span className='underline text-slate-400'>Visit Their Website </span></a>
             </div>
             <div className="pt-3 inline-flex items-center flex-wrap">
-              <div className='pad-1'><span className="bg-green-950 border border-green-800 text-green-400 rounded-lg px-2 py-1 text-xs">TailwindCSS</span></div>
-              <div className='pad-1'><span className="bg-sky-950 border border-sky-800 text-sky-400 rounded-lg px-2 py-1 text-xs">JavaScript</span></div>
-              <div className='pad-1'><span className="bg-violet-950 border border-violet-800 text-violet-400 rounded-lg px-2 py-1 text-xs">PHP</span></div>
-              <div className='pad-1'><span className="bg-yellow-950 border border-yellow-800 text-yellow-400 rounded-lg px-2 py-1 text-xs">Laravel</span></div>
-              <div className='pad-1'><span className="bg-sky-950 border border-sky-800 text-sky-400 rounded-lg px-2 py-1 text-xs">Debugging</span></div>
+              <SkillCard name="TailwindCSS" />
+              <SkillCard name="JavaScript" />
+              <SkillCard name="PHP" />
+              <SkillCard name="Laravel" />
+              <SkillCard name="Debugging" />
             </div>
           </div>
         </div>
@@ -279,30 +280,14 @@ export const Experience = () => {
           I have consistently sought to develop my skills and expand my knowledge in modern frameworks and tools, including:
           </p>
           <div className="pt-3 inline-flex flex-wrap">
-              <div className='pad-1'>
-                <span className="bg-green-950 border border-green-800 text-green-400 rounded-lg px-2 py-1 text-xs">TailwindCSS</span>
-              </div>
-              <div className='pad-1'>
-                <span className="bg-sky-950 border border-sky-800 text-sky-400 rounded-lg px-2 py-1 text-xs">React</span>
-              </div>
-              <div className='pad-1'>
-                <span className="bg-yellow-950 border border-yellow-800 text-yellow-400 rounded-lg px-2 py-1 text-xs">JavaScript</span>
-              </div>
-              <div className='pad-1'>
-                <span className="bg-orange-950 border border-orange-800 text-orange-400 rounded-lg px-2 py-1 text-xs">Vite</span>
-              </div>
-              <div className='pad-1'>
-                <span className="bg-purple-950 border border-purple-800 text-purple-400 rounded-lg px-2 py-1 text-xs">Animations</span>
-              </div>
-              <div className='pad-1'>
-                <span className="bg-indigo-950 border border-indigo-800 text-indigo-400 rounded-lg px-2 py-1 text-xs">Pocketbase</span>
-              </div>
-              <div className='pad-1'>
-                <span className="bg-teal-950 border border-teal-800 text-teal-400 rounded-lg px-2 py-1 text-xs">NextJS</span>
-              </div>
-              <div className='pad-1'>
-                <span className="bg-gray-950 border border-gray-800 text-gray-400 rounded-lg px-2 py-1 text-xs">Vercel Deployment</span>
-              </div>
+              <SkillCard name="TailwindCSS" />
+              <SkillCard name="React" />
+              <SkillCard name="JavaScript" />
+              <SkillCard name="Vite" />
+              <SkillCard name="Animations" />
+              <SkillCard name="Pocketbase" />
+              <SkillCard name="NextJS" />
+              <SkillCard name="Vercel Deployment" />
           </div>
 
           </div>   
