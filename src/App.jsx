@@ -42,7 +42,7 @@ function App() {
             </button>
           </div>
         </div>
-        <div className="Contents pt-10">
+        <div className="Contents pt-10 grid grid-cols-1 gap-y-10">
           <div className='flex items-center justify-center' id='About'>
             <Profile/>          
           </div>
@@ -53,7 +53,7 @@ function App() {
           <div id='Projects'><Projects/></div>
           <div id='Social'><SocialLinks/></div>
         </div>
-        <div className="footer pad-4 small-text">
+        <div className=" flex bg-zinc-900 p-5 small-text">
           &copy; &nbsp; Ndanga, All rights reserved.
         </div>
     </div>

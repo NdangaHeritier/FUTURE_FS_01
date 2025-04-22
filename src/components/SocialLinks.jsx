@@ -59,41 +59,44 @@ export default function SocialLinks() {
       </div>
       <div className="contact-form">
         <form onSubmit={handleSubmit}>
-          <div className="flex gap-1 pad-2">
+          <div className="grid grid-cols-2 p-2 gap-3">
             <input
               type="text"
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="input-field"
+              className="input-field rounded-xl border border-zinc-700 px-5 py-3 outline-0"
               id="fullname"
               placeholder="Fullname"
               autoComplete="off"
+              required
             />
             <input
               type="email"
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="input-field"
+              className="input-field rounded-xl border border-zinc-700 px-5 py-3 outline-0"
               id="email"
               placeholder="Email"
               autoComplete="off"
+              required
             />
           </div>
-          <div className="flex gap-1 pad-2">
+          <div className="grid grid-cols-1 p-2">
             <input
               type="tel"
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              className="input-field input-field-large"
+              className="input-field  rounded-xl border border-zinc-700 px-5 py-3 outline-0"
               id="phone"
               placeholder="Phone Number"
               autoComplete="off"
+              required
             />
           </div>
-          <div className="flex gap-1 pad-2">
+          <div className="grid grid-cols-1 p-2">
             <textarea
               name="message"
               value={formData.message}
@@ -101,25 +104,44 @@ export default function SocialLinks() {
               id="message"
               cols="30"
               rows="10"
-              className="input-field input-field-large"
+              className="input-field rounded-xl border border-zinc-700 px-5 py-3 outline-0"
               placeholder="Leave Message"
+              required
             ></textarea>
           </div>
-          <div className="flex gap-1 pad-2">
-            <button type="submit" className="btn-2">
+          <div className="grid grid-cols-1 gap-1 p-3">
+            <button type="submit" className="px-10 py-3 bg-yellow-700 hover:bg-yellow-800 cursor-pointer rounded-xl font-semibold">
               Send Me
             </button>
             {success && (
               <div className="SentMessage">
-                <div>
-                  <div className="Message pad-3">
-                    Your Message sent successfully! Thanks for contacting.
+                <div className='flex items-center flex-col justify-center gap-5'>
+                  <div className="flex items-center flex-col justify-center gap-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-22 h-22 cursor-pointer p-3 rounded-full bg-green-600/50"
+                      onClick={closeMessage}
+                    >
+                      <circle cx="12" cy="12" r="10" fill="green" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M9 12l2 2 4-4"
+                        stroke="white"
+                        strokeWidth="2"
+                      />
+                    </svg>
+                    <p>Your Message sent successfully! Thanks for contacting.</p>
                   </div>
                   <div className="flex">
                     <button
                       type="button"
                       onClick={closeMessage}
-                      className="btn-1 small-text"
+                      className="bg-green-600 text-slate-100 rounded-xl px-5 py-3 text-sm font-semibold hover:bg-green-700"
                     >
                       Okay
                     </button>
@@ -129,18 +151,32 @@ export default function SocialLinks() {
             )}
             {error && (
               <div className="ErrorMessage">
-                <div>
-                  <div className="Message pad-3">
-                    <div className="big-text pad-2">❌</div>
-                    {error}
+                <div className='flex items-center flex-col justify-center gap-5'>
+                  <div className="flex items-center flex-col justify-center gap-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-22 h-22 cursor-pointer p-3 rounded-full bg-red-600/50"
+                      onClick={closeMessage}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                    <p>{error}</p>
                   </div>
                   <div className="flex">
                     <button
                       type="button"
                       onClick={closeMessage}
-                      className="btn-2 small-text"
+                      className="bg-zinc-900 text-slate-100 cursor-pointer rounded-xl px-5 py-3 text-sm font-semibold hover:bg-zinc-800"
                     >
-                      Re-try
+                      Try Again
                     </button>
                   </div>
                 </div>
@@ -149,13 +185,39 @@ export default function SocialLinks() {
           </div>
         </form>
       </div>
-      <div className="contact-direct">
-        <a className="flex small-text pad-1" href="mailto:ndangahertier@gmail.com">
-          <img src={email} width={20} className="pe-1" alt="Email" />{' '}
+      <div className="flex items-center justify-center gap-3 p-5">
+        <a className="flex items-center justify-center bg-zinc-900 gap-x-2 text-sm rounded-full border border-zinc-700 px-5 py-2" href="mailto:ndangahertier@gmail.com">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-5 h-5"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M21.75 8.25v7.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25v-7.5m19.5 0A2.25 2.25 0 0019.5 6H4.5a2.25 2.25 0 00-2.25 2.25m19.5 0l-8.25 5.25m-3-1.91L2.25 8.25"
+            />
+          </svg>
           ndangahertier@gmail.com
         </a>
-        <a className="flex small-text pad-1" href="tel:+250786859758">
-          <img src={phone} width={20} className="pe-1" alt="Call" />:
+        <a className="flex items-center justify-center bg-zinc-900 gap-x-2 text-sm rounded-full border border-zinc-700 px-5 py-2" href="tel:+250786859758">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-5 h-5"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M2.25 6.75c0-1.242.504-2.437 1.396-3.329A4.68 4.68 0 016.75 2.25h.75c.621 0 1.125.504 1.125 1.125v3c0 .621-.504 1.125-1.125 1.125h-.75a.75.75 0 00-.75.75c0 .621.504 1.125 1.125 1.125h.75c3.105 0 5.625 2.52 5.625 5.625v.75c0 .621-.504 1.125-1.125 1.125h-3a1.125 1.125 0 01-1.125-1.125v-.75c0-.621-.504-1.125-1.125-1.125h-.75a.75.75 0 00-.75.75v.75c0 1.242-.504 2.437-1.396 3.329A4.68 4.68 0 012.25 17.25v-.75c0-3.105 2.52-5.625 5.625-5.625h.75c.621 0 1.125-.504 1.125-1.125v-.75c0-.621-.504-1.125-1.125-1.125h-.75c-3.105 0-5.625-2.52-5.625-5.625v-.75z"
+            />
+          </svg>
           +250 786859758
         </a>
       </div>

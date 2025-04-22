@@ -7,9 +7,20 @@ import Project5 from '../assets/project5.png'
 import Project6 from '../assets/project6.png'
 import Project7 from '../assets/project7.png'
 import Project8 from '../assets/project8.png'
+import Project9 from '../assets/project9.png'
 import github from '../assets/github.png'
+import SkillCard from './SkillCard'
 
 const projectItems = [
+  {
+    title: "Corporate Website.",
+    image: Project9,
+    description: "A corporate website to showcase services and contacts for a road construction company based in Rwanda.",
+    technologies: ["ReactJs", "React Router", "SEO"],
+    client: "Real Labest Group Ltd",
+    url: "https://reallabest.com/",
+    year: 2025
+  },
   {
     title: "Tujyane Travels",
     image: Project1,
@@ -36,15 +47,15 @@ const projectItems = [
     url: "https://intare1245590juay.vercel.app/",
     year: "2025",
   },
-  {
-    title: "NileGreenEnergy Landing Page",
-    description: "Bringing solar energy to rural South Sudan.",
-    image: Project4,
-    technologies: ["HTML", "TailwindCSS", "JavaScript", "Web3CSS Animations"],
-    client: "NileGreenEnergy Ltd",
-    url: "https://mynilegreen2682526827vercel.vercel.app/",
-    year: "2025",
-  },
+  // {
+  //   title: "NileGreenEnergy Landing Page",
+  //   description: "Bringing solar energy to rural South Sudan.",
+  //   image: Project4,
+  //   technologies: ["HTML", "TailwindCSS", "JavaScript", "Web3CSS Animations"],
+  //   client: "NileGreenEnergy Ltd",
+  //   url: "https://mynilegreen2682526827vercel.vercel.app/",
+  //   year: "2025",
+  // },
   {
     title: "RQSSA Quantity Surveyors based in Rwanda.",
     image: Project5,
@@ -92,25 +103,30 @@ export const Projects = () => {
         I have worked on several projects, both personal and professional. Here are some of the projects I have worked on since Jan 2024:
       </p>
       <div className="">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
           {projectItems.map((item, index) => (
-            <div key={index} className="card bg-trans-1 rounded-lg shadow-md relative">
-              <img src={item.image} alt={item.title} className="w-full h-56 max-sm:h-48 object-fill border-b border-b-slate-800 rounded-t-lg mb-4  bg-yellow-950" />
+            <div key={index} className="card bg-trans-1 rounded-2xl shadow-md relative">
+              <img src={item.image} alt={item.title} className="w-full h-56 max-sm:h-48 object-fill border-b border-b-slate-800 rounded-t-2xl mb-4  bg-zinc-700" />
               <div className="content p-4">
                 <h3 className="text-xl font-semibold">{item.title}</h3>                
-                <p className="text-yellow-700 text-sm py-3">Client: {item.client}</p>
-                <p className="text-gray-400">{item.description}</p>                
-                <p className="inline-flex flex-wrap">
+                <p className="text-slate-100 text-sm py-3">Client: {item.client}</p>
+                <p className="text-gray-400">{item.description}</p> 
+                <div className='pt-2 text-sm text-yellow-600'>Skills Used:</div>               
+                <p className="inline-flex flex-wrap pt-1">
                   {item.technologies.map(tech =>
                     {
-                      return <div key={tech} className='p-1'><span className="bg-slate-950 border border-slate-700 text-slate-400 rounded-lg px-2 py-1 text-xs">{tech}</span></div>
+                      return (
+                          <div key={tech}>
+                            <SkillCard name={tech} />
+                          </div>
+                        )
                     }
                   )}
                 </p>
-                <div className="absolute top-0 right-0 left-0 h-56 rounded-t-lg flex flex-col items-end p-3 justify-between bg-gradient-to-r from-transparent to-slate-900 from-80%">
-                  <p className="shadow-lg bg-slate-200 text-slate-950 font-bold rounded-lg px-2 py-1 border-2 border-slate-400 text-[15px]">{item.year}</p>
+                <div className="absolute top-0 right-0 left-0 h-56 rounded-t-lg flex flex-col items-end p-3 justify-between bg-gradient-to-r from-transparent to-zinc-950/30">
+                  <p className="bg-slate-200 text-slate-950 font-semibold rounded-lg px-2 py-1 text-sm">{item.year}</p>
                   {item.url && (
-                  <a href={item.url} target="_blank" rel="noopener noreferrer" className="mt-2 text-slate-100 inline-flex items-center hover:bg-slate-950 border border-slate-500 bg-slate-900 rounded-lg px-2 py-1 text-sm font-semibold">
+                  <a href={item.url} target="_blank" rel="noopener noreferrer" className="mt-2 text-slate-100 inline-flex items-center hover:bg-slate-950 border border-slate-700 bg-trans-2 rounded-lg px-2 py-1 text-sm font-semibold">
                     <span className="border-t-2 border-l-2 border-gray-400 h-2 w-2 me-1 rounded-tl-sm"></span>Visit
                   </a>
                   )}
@@ -122,7 +138,7 @@ export const Projects = () => {
 
           {/* custom card */}
 
-          <div className="flex p-5 items-center justify-center flex-col bg-yellow-700 rounded-lg shadow-md relative">
+          <div className="flex p-5 items-center justify-center flex-col bg-yellow-700 rounded-2xl shadow-md relative">
               <div className="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-16 h-16 text-yellow-700 rounded-lg bg-white p-2">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />

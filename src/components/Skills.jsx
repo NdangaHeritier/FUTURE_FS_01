@@ -1,8 +1,9 @@
 import React from 'react'
+import SkillCard from './SkillCard'
 
 export const Skills = () => {
   return (
-    <div className='p-8 max-sm:px-5 bg-gradient-to-r from-slate-800 to-slate-900 my-10'>
+    <div className='p-8 max-sm:px-5 bg-trans-2 my-10'>
       <div className="big-text big-title pad-1">
         <span className="pi"></span>Skills
       </div>
@@ -12,62 +13,73 @@ export const Skills = () => {
           My expertise includes:
         </div>
 
-        <p className="p-2 rounded-t-lg border border-slate-700 bg-slate-800 text-slate-300 font-bold inline-flex items-center w-full">
-          <span className="pi-2 border-2 border-slate-400"></span>
+        <p className="p-2 rounded-t-lg border border-white/20 bg-trans-1 text-slate-300 font-bold inline-flex items-center w-full">
+          <svg xmlns="http://www.w3.org/2000/svg" className="bg-yellow-600/30 rounded-full p-1 h-6 w-6 me-2 transform rotate-45" fill="none" viewBox="0 0 24 24" stroke="#f57f17" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 2a7 7 0 00-7 7c0 2.28 1.11 4.3 2.8 5.6.4.3.7.8.7 1.3v1.1a1 1 0 001 1h6a1 1 0 001-1v-1.1c0-.5.3-1 .7-1.3A7.003 7.003 0 0019 9a7 7 0 00-7-7zM9 21h6m-6-2h6" />
+          </svg>
           Front-end Web Developement.
         </p>
-        <div className="p-2 border border-slate-700 border-t-0 bg-slate-900 w-full inline-flex items-center flex-wrap">
-            <div className='p-1'><span className="bg-green-950 border border-green-800 text-green-400 rounded-lg px-2 py-1 text-xs">AOS Animation</span></div>            
-            <div className='p-1'><span className="bg-blue-950 border border-blue-800 text-blue-400 rounded-lg px-2 py-1 text-xs">TailwindCSS</span></div>
-            <div className='p-1'><span className="bg-blue-950 border border-blue-800 text-blue-400 rounded-lg px-2 py-1 text-xs">ReactJS</span></div>
-            <div className='p-1'><span className="bg-slate-950 border border-slate-500 text-slate-100 rounded-lg px-2 py-1 text-xs">NextJS</span></div>
-            <div className='p-1'><span className="bg-red-950 border border-red-800 text-red-400 rounded-lg px-2 py-1 text-xs">HTML & JS & CSS</span></div>
-            <div className='p-1'><span className="bg-violet-950 border border-violet-800 text-violet-400 rounded-lg px-2 py-1 text-xs">BootstrapCSS</span></div>
+        <div className="p-2 py-5 border-r border-l border-white/20 bg-trans-2 w-full inline-flex items-center flex-wrap">
+            <SkillCard name="AOS Animation" />            
+            <SkillCard name="TailwindCSS" />
+            <SkillCard name="ReactJS" />
+            <SkillCard name="NextJS" />
+            <SkillCard name="HTML & JS & CSS" />
+            <SkillCard name="BootstrapCSS" />
+            <SkillCard name="TypeScript" />
         </div>
 
-        <p className="p-2 border border-t-0 border-slate-700 bg-slate-800 text-slate-300 font-bold inline-flex items-center w-full">
-          <span className="pi-2 border-2 border-slate-400"></span>
+        <p className="p-2 border border-t-0 border-white/20 bg-trans-1 text-slate-300 font-bold inline-flex items-center w-full">
+          <svg xmlns="http://www.w3.org/2000/svg" className="bg-yellow-600/30 rounded-full p-1 h-6 w-6 me-2 transform rotate-45" fill="none" viewBox="0 0 24 24" stroke="#f57f17" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 2a7 7 0 00-7 7c0 2.28 1.11 4.3 2.8 5.6.4.3.7.8.7 1.3v1.1a1 1 0 001 1h6a1 1 0 001-1v-1.1c0-.5.3-1 .7-1.3A7.003 7.003 0 0019 9a7 7 0 00-7-7zM9 21h6m-6-2h6" />
+          </svg>
           Back-end Web Developement.
         </p>
-        <div className="p-2 border border-slate-700 border-t-0 bg-slate-900 w-full inline-flex items-center flex-wrap">
-            <div className='p-1'><span className="bg-green-950 border border-green-800 text-green-400 rounded-lg px-2 py-1 text-xs">NodeJS</span></div>            
-            <div className='p-1'><span className="bg-slate-950 border border-slate-800 text-slate-400 rounded-lg px-2 py-1 text-xs">ExpressJS</span></div>
-            <div className='p-1'><span className="bg-blue-950 border border-blue-800 text-blue-400 rounded-lg px-2 py-1 text-xs">PHP</span></div>
-            <div className='p-1'><span className="bg-red-950 border border-red-800 text-red-400 rounded-lg px-2 py-1 text-xs">Laravel</span></div>
-            <div className='p-1'><span className="bg-green-950 border border-green-800 text-green-400 rounded-lg px-2 py-1 text-xs">MongoDB</span></div>            
-            <div className='p-1'><span className="bg-yellow-950 border border-yellow-800 text-yellow-400 rounded-lg px-2 py-1 text-xs">PocketBase</span></div>            
-            <div className='p-1'><span className="bg-orange-950 border border-orange-800 text-orange-400 rounded-lg px-2 py-1 text-xs">MySQL-MariaDB</span></div>
+        <div className="p-2 py-5 border-r border-l border-white/20 bg-trans-2 w-full inline-flex items-center flex-wrap">
+            <SkillCard name="NodeJS" />    
+            <SkillCard name="ExpressJS" />
+            <SkillCard name="PHP" />
+            <SkillCard name="Laravel" />
+            <SkillCard name="MongoDB" />            
+            <SkillCard name="PocketBase" />            
+            <SkillCard name="MySQL-MariaDB" />
         </div>
-        <p className="p-2 border border-t-0 border-slate-700 bg-slate-800 text-slate-300 font-bold inline-flex items-center w-full">
-          <span className="pi-2 border-2 border-slate-400"></span>
+        <p className="p-2 border border-t-0 border-white/20 bg-trans-1 text-slate-300 font-bold inline-flex items-center w-full">
+          <svg xmlns="http://www.w3.org/2000/svg" className="bg-yellow-600/30 rounded-full p-1 h-6 w-6 me-2 transform rotate-45" fill="none" viewBox="0 0 24 24" stroke="#f57f17" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 2a7 7 0 00-7 7c0 2.28 1.11 4.3 2.8 5.6.4.3.7.8.7 1.3v1.1a1 1 0 001 1h6a1 1 0 001-1v-1.1c0-.5.3-1 .7-1.3A7.003 7.003 0 0019 9a7 7 0 00-7-7zM9 21h6m-6-2h6" />
+          </svg>
           Web And Graphic Design.
         </p>
-        <div className="p-2 border border-slate-700 border-t-0 bg-slate-900 w-full inline-flex items-center flex-wrap">
-            <div className='p-1'><span className="bg-green-950 border border-green-800 text-green-400 rounded-lg px-2 py-1 text-xs">Figma</span></div>
-            <div className='p-1'><span className="bg-slate-950 border border-slate-500 text-slate-100 rounded-lg px-2 py-1 text-xs">Photoshop</span></div>
-            <div className='p-1'><span className="bg-violet-950 border border-violet-800 text-violet-400 rounded-lg px-2 py-1 text-xs">Canva</span></div>
-            <div className='p-1'><span className="bg-yellow-950 border border-yellow-800 text-yellow-400 rounded-lg px-2 py-1 text-xs">Sketch</span></div>
+        <div className="p-2 py-5 border-r border-l border-white/20 bg-trans-2 w-full inline-flex items-center flex-wrap">
+            <SkillCard name="Figma" />
+            <SkillCard name="Photoshop" />
+            <SkillCard name="Canva" />
+            <SkillCard name="Sketch" />
         </div>
 
-        <p className="p-2 border border-t-0 border-slate-700 bg-slate-800 text-slate-300 font-bold inline-flex items-center w-full">
-          <span className="pi-2 border-2 border-slate-400"></span>
+        <p className="p-2 border border-t-0 border-white/20 bg-trans-1 text-slate-300 font-bold inline-flex items-center w-full">
+          <svg xmlns="http://www.w3.org/2000/svg" className="bg-yellow-600/30 rounded-full p-1 h-6 w-6 me-2 transform rotate-45" fill="none" viewBox="0 0 24 24" stroke="#f57f17" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 2a7 7 0 00-7 7c0 2.28 1.11 4.3 2.8 5.6.4.3.7.8.7 1.3v1.1a1 1 0 001 1h6a1 1 0 001-1v-1.1c0-.5.3-1 .7-1.3A7.003 7.003 0 0019 9a7 7 0 00-7-7zM9 21h6m-6-2h6" />
+          </svg>
           Other Skills.
         </p>
-        <div className="p-2 border border-slate-700 border-t-0 bg-slate-900 w-full inline-flex items-center flex-wrap">
-            <div className='p-1'><span className="bg-green-950 border border-green-800 text-green-400 rounded-lg px-2 py-1 text-xs">Git & GitHub</span></div>            
-            <div className='p-1'><span className="bg-blue-950 border border-blue-800 text-blue-400 rounded-lg px-2 py-1 text-xs">Agile Methodologies</span></div>
-            <div className='p-1'><span className="bg-red-950 border border-red-800 text-red-400 rounded-lg px-2 py-1 text-xs">Problem Solving</span></div>
-            <div className='p-1'><span className="bg-yellow-950 border border-yellow-800 text-yellow-400 rounded-lg px-2 py-1 text-xs">Teamwork</span></div>
-            <div className='p-1'><span className="bg-orange-950 border border-orange-800 text-orange-400 rounded-lg px-2 py-1 text-xs">Communication</span></div>
-            <div className='p-1'><span className="bg-slate-950 border border-slate-800 text-slate-400 rounded-lg px-2 py-1 text-xs">Time Management</span></div>
+        <div className="p-2 py-5 border-r border-l border-white/20 bg-trans-2 w-full inline-flex items-center flex-wrap">
+            <SkillCard name="Git & GitHub" />            
+            <SkillCard name="Agile Methodologies" />
+            <SkillCard name="Problem Solving" />
+            <SkillCard name="Teamwork" />
+            <SkillCard name="Communication" />
+            <SkillCard name="Time Management" />
         </div>
-        <p className="p-2 border border-t-0 border-slate-700 bg-slate-800 text-slate-300 font-bold inline-flex items-center w-full">
-          <span className="pi-2 border-2 border-slate-400"></span>
+        <p className="p-2 border border-t-0 border-white/20 bg-trans-1 text-slate-300 font-bold inline-flex items-center w-full">
+          <svg xmlns="http://www.w3.org/2000/svg" className="bg-yellow-600/30 rounded-full p-1 h-6 w-6 me-2 transform rotate-45" fill="none" viewBox="0 0 24 24" stroke="#f57f17" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 2a7 7 0 00-7 7c0 2.28 1.11 4.3 2.8 5.6.4.3.7.8.7 1.3v1.1a1 1 0 001 1h6a1 1 0 001-1v-1.1c0-.5.3-1 .7-1.3A7.003 7.003 0 0019 9a7 7 0 00-7-7zM9 21h6m-6-2h6" />
+          </svg>
           Languages.
         </p>
-        <div className="p-2 rounded-b-lg border border-slate-700 border-t-0 bg-slate-900 w-full inline-flex items-center flex-wrap">
-            <div className='p-1'><span className="bg-green-950 border border-green-800 text-green-400 rounded-lg px-2 py-1 text-xs">Kinyarwanda</span></div>            
-            <div className='p-1'><span className="bg-blue-950 border border-blue-800 text-blue-400 rounded-lg px-2 py-1 text-xs">English</span></div>
+        <div className="p-2 py-5 rounded-b-lg border border-t-0 border-white/20 bg-trans-2 w-full inline-flex items-center flex-wrap">
+            <SkillCard name="Kinyarwanda" />            
+            <SkillCard name="English" />
         </div>
 
 
