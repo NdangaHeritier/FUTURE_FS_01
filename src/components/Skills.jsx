@@ -8,7 +8,7 @@ export const Skills = () => {
         <span className="pi"></span>Skills
       </div>
       <div className="div-content p-4 my-2 round-2">
-        <div className="text p-4 small-text">
+        <div className="text py-4 small-text">
           I have a diverse skill set that allows me to tackle various challenges in web development. 
           My expertise includes:
         </div>
