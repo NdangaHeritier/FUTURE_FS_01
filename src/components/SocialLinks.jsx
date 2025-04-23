@@ -63,7 +63,7 @@ export default function SocialLinks() {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="input-field rounded-xl border border-zinc-700 px-5 py-3 outline-0"
+              className="input-field rounded-xl border border-zinc-700 focus:border-yellow-700 focus:ring-3 focus:ring-yellow-700/50 px-5 py-3 outline-0"
               id="fullname"
               placeholder="Fullname"
               autoComplete="off"
@@ -74,7 +74,7 @@ export default function SocialLinks() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="input-field rounded-xl border border-zinc-700 px-5 py-3 outline-0"
+              className="input-field rounded-xl border border-zinc-700 focus:border-yellow-700 focus:ring-3 focus:ring-yellow-700/50 px-5 py-3 outline-0"
               id="email"
               placeholder="Email"
               autoComplete="off"
@@ -87,7 +87,7 @@ export default function SocialLinks() {
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              className="input-field  rounded-xl border border-zinc-700 px-5 py-3 outline-0"
+              className="input-field  rounded-xl border border-zinc-700 focus:border-yellow-700 focus:ring-3 focus:ring-yellow-700/50 px-5 py-3 outline-0"
               id="phone"
               placeholder="Phone Number"
               autoComplete="off"
@@ -102,7 +102,7 @@ export default function SocialLinks() {
               id="message"
               cols="30"
               rows="10"
-              className="input-field rounded-xl border border-zinc-700 px-5 py-3 outline-0"
+              className="input-field rounded-xl border border-zinc-700 focus:border-yellow-700 focus:ring-3 focus:ring-yellow-700/50 px-5 py-3 outline-0"
               placeholder="Leave Message"
               required
             ></textarea>
@@ -183,7 +183,7 @@ export default function SocialLinks() {
           </div>
         </form>
       </div>
-      <div className="flex max-sm:grid max-sm:grid-cols-1 items-center justify-center gap-3 p-5">
+      <div className="flex items-center justify-center flex-wrap gap-3 p-5">
         <a className="flex items-center justify-center bg-zinc-900 gap-x-2 text-sm rounded-full border border-zinc-700 px-5 py-2" href="mailto:ndangahertier@gmail.com">
           <svg
             xmlns="http://www.w3.org/2000/svg"

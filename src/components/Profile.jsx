@@ -1,5 +1,5 @@
 import React from 'react'
-import Mypic from '/ndanga.jpg';
+import Mypic from '/ndanga.png';
 import linkedin from '../assets/linkedin.png';
 import ig from '../assets/instagram.png';
 import github from '../assets/github.png';

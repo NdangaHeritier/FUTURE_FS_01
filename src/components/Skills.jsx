@@ -14,23 +14,27 @@ export const Skills = () => {
         </div>
 
         <p className="p-2 rounded-t-lg border border-white/20 bg-trans-1 text-slate-300 font-bold inline-flex items-center w-full">
-          <svg xmlns="http://www.w3.org/2000/svg" className="bg-yellow-600/30 rounded-full p-1 h-6 w-6 me-2 transform rotate-45" fill="none" viewBox="0 0 24 24" stroke="#f57f17" strokeWidth={2}>
+          <svg xmlns="http://www.w3.org/2000/svg" className="bg-yellow-600/20 rounded-full p-1 h-6 w-6 me-2 transform rotate-45" fill="none" viewBox="0 0 24 24" stroke="#f57f17" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M12 2a7 7 0 00-7 7c0 2.28 1.11 4.3 2.8 5.6.4.3.7.8.7 1.3v1.1a1 1 0 001 1h6a1 1 0 001-1v-1.1c0-.5.3-1 .7-1.3A7.003 7.003 0 0019 9a7 7 0 00-7-7zM9 21h6m-6-2h6" />
           </svg>
           Front-end Web Developement.
         </p>
         <div className="p-2 py-5 border-r border-l border-white/20 bg-trans-2 w-full inline-flex items-center flex-wrap">
-            <SkillCard name="AOS Animation" />            
-            <SkillCard name="TailwindCSS" />
             <SkillCard name="ReactJS" />
             <SkillCard name="NextJS" />
+            <SkillCard name="TailwindCSS" />
+            <SkillCard name="Framer Motion" />
+            <SkillCard name="AOS Animation" />
+            <SkillCard name="JSX" />
+            <SkillCard name="JSON" />
+            <SkillCard name="REST API" />
+            <SkillCard name="GraphQL" />
             <SkillCard name="HTML & JS & CSS" />
             <SkillCard name="BootstrapCSS" />
-            <SkillCard name="TypeScript" />
         </div>
 
         <p className="p-2 border border-t-0 border-white/20 bg-trans-1 text-slate-300 font-bold inline-flex items-center w-full">
-          <svg xmlns="http://www.w3.org/2000/svg" className="bg-yellow-600/30 rounded-full p-1 h-6 w-6 me-2 transform rotate-45" fill="none" viewBox="0 0 24 24" stroke="#f57f17" strokeWidth={2}>
+          <svg xmlns="http://www.w3.org/2000/svg" className="bg-yellow-600/20 rounded-full p-1 h-6 w-6 me-2 transform rotate-45" fill="none" viewBox="0 0 24 24" stroke="#f57f17" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M12 2a7 7 0 00-7 7c0 2.28 1.11 4.3 2.8 5.6.4.3.7.8.7 1.3v1.1a1 1 0 001 1h6a1 1 0 001-1v-1.1c0-.5.3-1 .7-1.3A7.003 7.003 0 0019 9a7 7 0 00-7-7zM9 21h6m-6-2h6" />
           </svg>
           Back-end Web Developement.
@@ -42,11 +46,12 @@ export const Skills = () => {
             <SkillCard name="Laravel" />
             <SkillCard name="MongoDB" />            
             <SkillCard name="PocketBase" />            
-            <SkillCard name="MySQL-MariaDB" />
+            <SkillCard name="MySQL" />
+            <SkillCard name="TypeScript" />
         </div>
 
         <p className="p-2 border border-t-0 border-white/20 bg-trans-1 text-slate-300 font-bold inline-flex items-center w-full">
-          <svg xmlns="http://www.w3.org/2000/svg" className="bg-yellow-600/30 rounded-full p-1 h-6 w-6 me-2 transform rotate-45" fill="none" viewBox="0 0 24 24" stroke="#f57f17" strokeWidth={2}>
+          <svg xmlns="http://www.w3.org/2000/svg" className="bg-yellow-600/20 rounded-full p-1 h-6 w-6 me-2 transform rotate-45" fill="none" viewBox="0 0 24 24" stroke="#f57f17" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M12 2a7 7 0 00-7 7c0 2.28 1.11 4.3 2.8 5.6.4.3.7.8.7 1.3v1.1a1 1 0 001 1h6a1 1 0 001-1v-1.1c0-.5.3-1 .7-1.3A7.003 7.003 0 0019 9a7 7 0 00-7-7zM9 21h6m-6-2h6" />
           </svg>
           Programming Languages
@@ -61,7 +66,7 @@ export const Skills = () => {
 
 
         <p className="p-2 border border-t-0 border-white/20 bg-trans-1 text-slate-300 font-bold inline-flex items-center w-full">
-          <svg xmlns="http://www.w3.org/2000/svg" className="bg-yellow-600/30 rounded-full p-1 h-6 w-6 me-2 transform rotate-45" fill="none" viewBox="0 0 24 24" stroke="#f57f17" strokeWidth={2}>
+          <svg xmlns="http://www.w3.org/2000/svg" className="bg-yellow-600/20 rounded-full p-1 h-6 w-6 me-2 transform rotate-45" fill="none" viewBox="0 0 24 24" stroke="#f57f17" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M12 2a7 7 0 00-7 7c0 2.28 1.11 4.3 2.8 5.6.4.3.7.8.7 1.3v1.1a1 1 0 001 1h6a1 1 0 001-1v-1.1c0-.5.3-1 .7-1.3A7.003 7.003 0 0019 9a7 7 0 00-7-7zM9 21h6m-6-2h6" />
           </svg>
           Web And Graphic Design.
@@ -74,7 +79,7 @@ export const Skills = () => {
         </div>
 
         <p className="p-2 border border-t-0 border-white/20 bg-trans-1 text-slate-300 font-bold inline-flex items-center w-full">
-          <svg xmlns="http://www.w3.org/2000/svg" className="bg-yellow-600/30 rounded-full p-1 h-6 w-6 me-2 transform rotate-45" fill="none" viewBox="0 0 24 24" stroke="#f57f17" strokeWidth={2}>
+          <svg xmlns="http://www.w3.org/2000/svg" className="bg-yellow-600/20 rounded-full p-1 h-6 w-6 me-2 transform rotate-45" fill="none" viewBox="0 0 24 24" stroke="#f57f17" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M12 2a7 7 0 00-7 7c0 2.28 1.11 4.3 2.8 5.6.4.3.7.8.7 1.3v1.1a1 1 0 001 1h6a1 1 0 001-1v-1.1c0-.5.3-1 .7-1.3A7.003 7.003 0 0019 9a7 7 0 00-7-7zM9 21h6m-6-2h6" />
           </svg>
           Other Skills.
@@ -88,7 +93,7 @@ export const Skills = () => {
             <SkillCard name="Time Management" />
         </div>
         <p className="p-2 border border-t-0 border-white/20 bg-trans-1 text-slate-300 font-bold inline-flex items-center w-full">
-          <svg xmlns="http://www.w3.org/2000/svg" className="bg-yellow-600/30 rounded-full p-1 h-6 w-6 me-2 transform rotate-45" fill="none" viewBox="0 0 24 24" stroke="#f57f17" strokeWidth={2}>
+          <svg xmlns="http://www.w3.org/2000/svg" className="bg-yellow-600/20 rounded-full p-1 h-6 w-6 me-2 transform rotate-45" fill="none" viewBox="0 0 24 24" stroke="#f57f17" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M12 2a7 7 0 00-7 7c0 2.28 1.11 4.3 2.8 5.6.4.3.7.8.7 1.3v1.1a1 1 0 001 1h6a1 1 0 001-1v-1.1c0-.5.3-1 .7-1.3A7.003 7.003 0 0019 9a7 7 0 00-7-7zM9 21h6m-6-2h6" />
           </svg>
           Languages.

@@ -55,8 +55,11 @@ function App() {
           <div id='Projects'><Projects/></div>
           <div id='Social'><SocialLinks/></div>
         </div>
-        <div className=" flex bg-zinc-900 p-5 small-text">
-          &copy; &nbsp; Ndanga, All rights reserved.
+        <div className=" flex items-center justify-between max-sm:flex-col bg-zinc-900 p-5 small-text">
+          <p>&copy; &nbsp; Ndanga Heritier, All rights reserved.</p>
+          <div className="fw-semibold max-sm:flex self-end bg-yellow-700/10 max-sm:text-xs rounded-md px-1 py-0.5 border border-yellow-700/70 ring-3 ring-yellow-700/20">
+            <span className='text-yellow-700 fw-bold pe-1'>@</span>dev~ndanga
+          </div>
         </div>
     </div>
   )
