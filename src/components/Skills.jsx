@@ -3,11 +3,11 @@ import SkillCard from './SkillCard'
 
 export const Skills = () => {
   return (
-    <div className='p-8 max-sm:px-5 bg-trans-2 my-10'>
+    <div className='p-8 max-sm:px-3 bg-trans-2 my-10'>
       <div className="big-text big-title pad-1">
         <span className="pi"></span>Skills
       </div>
-      <div className="div-content pad-3 my-2 round-2">
+      <div className="div-content p-4 my-2 round-2">
         <div className="text p-4 small-text">
           I have a diverse skill set that allows me to tackle various challenges in web development. 
           My expertise includes:
