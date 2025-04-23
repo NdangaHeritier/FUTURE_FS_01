@@ -183,7 +183,7 @@ export default function SocialLinks() {
           </div>
         </form>
       </div>
-      <div className="flex items-center justify-center gap-3 p-5">
+      <div className="flex max-sm:grid max-sm:grid-cols-1 items-center justify-center gap-3 p-5">
         <a className="flex items-center justify-center bg-zinc-900 gap-x-2 text-sm rounded-full border border-zinc-700 px-5 py-2" href="mailto:ndangahertier@gmail.com">
           <svg
             xmlns="http://www.w3.org/2000/svg"
