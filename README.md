@@ -1,8 +1,7 @@
-# React + Vite
+# UMURAGWA NDANGA Heritier
+## portfolio website project.
+this is my portfolio website project that showcase my ability and skills i combine to tackle big and complex challenges.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+it contains sections like education background, experience through crafting custom softwares, projects or my works, and form for contact.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+this project was inspired by my supervision at future interns where they gave us three project to complete during our one-month internship program including out portfolio website to showcase our skills to craft custom solutions and i was truly inspired and eagerly waiting to make it amazing and outstanding so that i can show what i can through making its visitor feel more engaged and deserved.
