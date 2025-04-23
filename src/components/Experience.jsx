@@ -10,7 +10,7 @@ export const Experience = () => {
 
       {/* experience cards */}
       <div className='flex flex-col items-center gap-5'>
-        <div className="div-content bg-trans-1 pad-3 my-2 round-2">
+        <div className="div-content bg-trans-1 p-3 my-2 round-2">
           <div className="medium-text p-2">
               <span className="big-text">1</span><span className="pi-2"></span>Junior Web Developer
           </div>
@@ -69,7 +69,7 @@ export const Experience = () => {
           </div>
         </div>
 
-        <div className="div-content bg-trans-1 pad-3 my-2 round-2">
+        <div className="div-content bg-trans-1 p-3 my-2 round-2">
           <div className="medium-text p-2">
               <span className="big-text">2</span><span className="pi-2"></span>Full-stack Web Developer Intern
           </div>
@@ -127,7 +127,7 @@ export const Experience = () => {
         </div>
 
         {/* after first two cards */}
-        <div className="div-content bg-trans-1 pad-3 my-2 round-2">
+        <div className="div-content bg-trans-1 p-3 my-2 round-2">
           <div className="medium-text p-2">
               <span className="big-text">3</span><span className="pi-2"></span>Software Developer Intern
           </div>
@@ -179,7 +179,7 @@ export const Experience = () => {
             </div>
           </div>
         </div>
-        <div className="div-content bg-trans-1 pad-3 my-2 round-2">
+        <div className="div-content bg-trans-1 p-3 my-2 round-2">
         <div className="medium-text p-2">
               <span className="big-text">4</span><span className="pi-2"></span>Web Developer Intern
           </div>
@@ -233,7 +233,7 @@ export const Experience = () => {
             </div>
           </div>
         </div>
-        <div className="div-content bg-trans-1 pad-3 my-2 round-2">
+        <div className="div-content bg-trans-1 p-3 my-2 round-2">
           <div className="medium-text pad-2">
           <span className="big-text">5</span><span className="pi-2"></span>Freelance Developer
           </div>
