@@ -149,7 +149,7 @@ export const Projects = () => {
               <img src={item.image} alt={item.title} className="w-full h-56 max-sm:h-48 object-fill border-b border-b-slate-800 rounded-t-2xl mb-4  bg-zinc-700" />
               <div className="content p-4">
                 <h3 className="text-xl font-semibold">{item.title}</h3>
-                <div className="flex items-center text-xs pt-1 gap-2">
+                <div className="flex items-center text-xs pt-1 gap-2 border-s-4 border-zinc-600 px-1">
                   <a href={item.iWasWorkingAt.url} target="_blank" rel="noopener noreferrer" className="text-zinc-300 font-semibold hover:text-zinc-100">
                     <span className="text-zinc-400">@</span>
                     {item.iWasWorkingAt.name}
