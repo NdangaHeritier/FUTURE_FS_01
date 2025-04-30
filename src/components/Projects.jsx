@@ -1,8 +1,8 @@
 import React from 'react'
-import Project1 from '../assets/project1.svg'
+import Project1 from '../assets/project1.png'
 import Project2 from '../assets/project2.png'
 import Project3 from '../assets/project3.png'
-import Project4 from '../assets/project4.png'
+// import Project4 from '../assets/project4.png'
 import Project5 from '../assets/project5.png'
 import Project6 from '../assets/project6.png'
 import Project7 from '../assets/project7.png'
@@ -12,28 +12,44 @@ import SkillCard from './SkillCard'
 
 const projectItems = [
   {
+    title: "Tujyane Travels",
+    image: Project1,
+    description: "A Ride Sharing Agency that connect people to share a ride.",
+    technologies: ["NextJS", "TailwindCSS", "NodeJS"],
+    client: "Tujyane Travels Ltd",
+    iWasWorkingAt: {
+      name: "Infinity Tech Solutions",
+      role: "FullStack Developer",
+      url: "https://infinitytech.rw/"
+    },    
+    url: "https://tujyanedevistooconcerned.vercel.app/",
+    year: "Under Developement"
+  },
+  {
     title: "Corporate Website.",
     image: Project9,
     description: "A corporate website to showcase services and contacts for a road construction company based in Rwanda.",
     technologies: ["ReactJs", "React Router", "SEO"],
     client: "Real Labest Group Ltd",
+    iWasWorkingAt: {
+      name: "Infinity Tech Solutions",
+      role: "FullStack Developer",
+      url: "https://infinitytech.rw/"
+    },
     url: "https://reallabest.com/",
     year: 2025
-  },
-  {
-    title: "Tujyane Travels",
-    image: Project1,
-    description: "A travel agency website that allows users to book cars for luggage and travels.",
-    technologies: ["NextJS", "TailwindCSS", "Flamer Motion", "NodeJS"],
-    client: "Tujyane Travels Ltd",
-    year: "Under Developement"
-  },
+  },  
   {
     title: "Oshil - Event Production and Management",
     description: "A website for an event production and management company.",
     image: Project2,
     technologies: ["AOS Animation", "TailwindCSS", "JavaScript"],
-    client: "Oshil. ltd",
+    client: "Oshil Events",
+    iWasWorkingAt: {
+      name: "Freelance",
+      role: "Front-end Developer",
+      url: "https://ndanga-heritier.vercel.app/#about"
+    },
     url: "https://oshilevents.vercel.app/",
     year: "2025",
   },
@@ -43,6 +59,11 @@ const projectItems = [
     image: Project3,
     technologies: ["HTML", "JavaScript", "TailwindCSS"],
     client: "JubaPay Ltd",
+    iWasWorkingAt: {
+      name: "Freelance",
+      role: "Front-end Developer",
+      url: "https://ndanga-heritier.vercel.app/#about"
+    },
     url: "https://intare1245590juay.vercel.app/",
     year: "2025",
   },
@@ -61,6 +82,11 @@ const projectItems = [
     description: "A website for a company that provides quantity surveying services in Rwanda.",
     technologies: ["ReactJS", "TailwindCSS"],
     client: "RQSSA Association",
+    iWasWorkingAt: {
+      name: "Freelance",
+      role: "Fullstack Developer",
+      url: "https://ndanga-heritier.vercel.app/#about"
+    },
     url: "https://why-rqsagotg10times.vercel.app/",
     year: "2024-2025",
   },
@@ -70,6 +96,11 @@ const projectItems = [
     description: "A Place, Cabin, B&B, Home and Hotels booking and Hosting system.",
     technologies: ["Laravel", "Bootstrap", "MySQL"],
     client: "self project",
+    iWasWorkingAt: {
+      name: "Freelance",
+      role: "Fullstack Laravel Developer",
+      url: "https://ndanga-heritier.vercel.app/#about"
+    },
     url: "https://github.com/Ndangaheritier/airbnb-project/tree/main/",
     year: "2024",
   },
@@ -79,6 +110,11 @@ const projectItems = [
     description: "An E-commerce website for selling and buying products.",
     technologies: ["HTML", "CSS", "JavaScript"],
     client: "self project",
+    iWasWorkingAt: {
+      name: "Freelance",
+      role: "Front-end Developer",
+      url: "https://ndanga-heritier.vercel.app/#about"
+    },
     url: "https://es-shop.vercel.app/",
     year: "2024",
   },
@@ -88,6 +124,11 @@ const projectItems = [
     description: "An extended ToDo List application that allow creating, editing and removing tasks.",
     technologies: ["HTML", "CSS", "JavaScript", "LocalStorage"],
     client: "self project",
+    iWasWorkingAt: {
+      name: "Freelance",
+      role: "Front-end Developer",
+      url: "https://ndanga-heritier.vercel.app/#about"
+    },
     url: "https://mytodoapp-js.vercel.app/",
     year: "2024",
   },
@@ -107,7 +148,18 @@ export const Projects = () => {
             <div key={index} className="card bg-trans-1 rounded-2xl shadow-md relative">
               <img src={item.image} alt={item.title} className="w-full h-56 max-sm:h-48 object-fill border-b border-b-slate-800 rounded-t-2xl mb-4  bg-zinc-700" />
               <div className="content p-4">
-                <h3 className="text-xl font-semibold">{item.title}</h3>                
+                <h3 className="text-xl font-semibold">{item.title}</h3>
+                <div className="flex items-center text-sm py-2 gap-2">
+                  <a href={item.iWasWorkingAt.url} target="_blank" rel="noopener noreferrer" className="text-zinc-300 font-semibold hover:text-zinc-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 inline-block me-1">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                    </svg>
+                    {item.iWasWorkingAt.name}
+                  </a>
+                  <span className="text-slate-400">as</span>
+                  <span className="text-slate-100 font-semibold">{item.iWasWorkingAt.role}</span>
+                  <a href={item.iWasWorkingAt.url} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-yellow-600"></a>                  
+                </div>                
                 <p className="text-slate-100 text-sm py-3">Client: {item.client}</p>
                 <p className="text-gray-400">{item.description}</p> 
                 <div className='pt-2 text-sm text-yellow-600'>Skills Used:</div>               
