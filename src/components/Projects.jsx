@@ -18,7 +18,7 @@ const projectItems = [
     technologies: ["NextJS", "TailwindCSS", "NodeJS"],
     client: "Tujyane Travels Ltd",
     iWasWorkingAt: {
-      name: "Infinity Tech Solutions",
+      name: "InfinityTechSolutions",
       role: "FullStack Developer",
       url: "https://infinitytech.rw/"
     },    
@@ -32,7 +32,7 @@ const projectItems = [
     technologies: ["ReactJs", "React Router", "SEO"],
     client: "Real Labest Group Ltd",
     iWasWorkingAt: {
-      name: "Infinity Tech Solutions",
+      name: "InfinityTechSolutions",
       role: "FullStack Developer",
       url: "https://infinitytech.rw/"
     },
@@ -46,7 +46,7 @@ const projectItems = [
     technologies: ["AOS Animation", "TailwindCSS", "JavaScript"],
     client: "Oshil Events",
     iWasWorkingAt: {
-      name: "Freelance",
+      name: "dev~ndanga",
       role: "Front-end Developer",
       url: "https://ndanga-heritier.vercel.app/#about"
     },
@@ -60,7 +60,7 @@ const projectItems = [
     technologies: ["HTML", "JavaScript", "TailwindCSS"],
     client: "JubaPay Ltd",
     iWasWorkingAt: {
-      name: "Freelance",
+      name: "dev~ndanga",
       role: "Front-end Developer",
       url: "https://ndanga-heritier.vercel.app/#about"
     },
@@ -83,7 +83,7 @@ const projectItems = [
     technologies: ["ReactJS", "TailwindCSS"],
     client: "RQSSA Association",
     iWasWorkingAt: {
-      name: "Freelance",
+      name: "dev~ndanga",
       role: "Fullstack Developer",
       url: "https://ndanga-heritier.vercel.app/#about"
     },
@@ -97,7 +97,7 @@ const projectItems = [
     technologies: ["Laravel", "Bootstrap", "MySQL"],
     client: "self project",
     iWasWorkingAt: {
-      name: "Freelance",
+      name: "dev~ndanga",
       role: "Fullstack Laravel Developer",
       url: "https://ndanga-heritier.vercel.app/#about"
     },
@@ -111,7 +111,7 @@ const projectItems = [
     technologies: ["HTML", "CSS", "JavaScript"],
     client: "self project",
     iWasWorkingAt: {
-      name: "Freelance",
+      name: "dev~ndanga",
       role: "Front-end Developer",
       url: "https://ndanga-heritier.vercel.app/#about"
     },
@@ -125,7 +125,7 @@ const projectItems = [
     technologies: ["HTML", "CSS", "JavaScript", "LocalStorage"],
     client: "self project",
     iWasWorkingAt: {
-      name: "Freelance",
+      name: "dev~ndanga",
       role: "Front-end Developer",
       url: "https://ndanga-heritier.vercel.app/#about"
     },
@@ -149,7 +149,7 @@ export const Projects = () => {
               <img src={item.image} alt={item.title} className="w-full h-56 max-sm:h-48 object-fill border-b border-b-slate-800 rounded-t-2xl mb-4  bg-zinc-700" />
               <div className="content p-4">
                 <h3 className="text-xl font-semibold">{item.title}</h3>
-                <div className="flex items-center text-sm py-2 gap-2">
+                <div className="flex items-center text-xs pt-1 gap-2">
                   <a href={item.iWasWorkingAt.url} target="_blank" rel="noopener noreferrer" className="text-zinc-300 font-semibold hover:text-zinc-100">
                     <span className="text-zinc-400">@</span>
                     {item.iWasWorkingAt.name}
@@ -157,7 +157,7 @@ export const Projects = () => {
                   <span className="text-slate-400">as</span>
                   <span className="text-slate-100 font-light">{item.iWasWorkingAt.role}</span>
                 </div>                
-                <p className="text-slate-100 text-sm py-3">Client: {item.client}</p>
+                <p className="text-slate-100 text-sm py-2">Client: {item.client}</p>
                 <p className="text-gray-400">{item.description}</p> 
                 <div className='pt-2 text-sm text-yellow-600'>Skills Used:</div>               
                 <p className="inline-flex flex-wrap pt-1">
