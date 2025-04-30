@@ -151,14 +151,11 @@ export const Projects = () => {
                 <h3 className="text-xl font-semibold">{item.title}</h3>
                 <div className="flex items-center text-sm py-2 gap-2">
                   <a href={item.iWasWorkingAt.url} target="_blank" rel="noopener noreferrer" className="text-zinc-300 font-semibold hover:text-zinc-100">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 inline-block me-1">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                    </svg>
+                    <span className="text-zinc-400">@</span>
                     {item.iWasWorkingAt.name}
                   </a>
                   <span className="text-slate-400">as</span>
-                  <span className="text-slate-100 font-semibold">{item.iWasWorkingAt.role}</span>
-                  <a href={item.iWasWorkingAt.url} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-yellow-600"></a>                  
+                  <span className="text-slate-100 font-light">{item.iWasWorkingAt.role}</span>
                 </div>                
                 <p className="text-slate-100 text-sm py-3">Client: {item.client}</p>
                 <p className="text-gray-400">{item.description}</p> 
